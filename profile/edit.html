@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Galvitron</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+
+	<body>
+		<div class="profile">
+			<div class="header-container">
+				<div class="container">
+					<div class="row">
+						<div class="col col-sm-3 flex-column">
+							<a href="/" class="logo"></a>
+						</div>
+						<div class="search col col-sm-6 flex-column">
+							<div class="flex-row">
+								<img src="/images/icons/search.png" class="search-icon"/>
+								<form class="flex-column" novalidate="novalidate">
+									<input type="text" class="search-input"/>
+									<button type="submit" style="display: none"></button>
+								</form>
+								<img src="/images/icons/grid.png" class="category-icon"/>
+							</div>
+						</div>
+						<div class="right-header col col-sm-3 flex-column">
+							<div class="flex-row">
+								<div>
+									<img src="/images/icons/users.png" class="members-icon"/>
+								</div>
+								<div class="action-menu dropdown-toggle  dropdown flex-row" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="https://via.placeholder.com/30x30" alt=""/>
+									<div class="menu-container"></div>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="/dashboard/upcoming.html"><img src="/images/icons/calendar.png"/>Upcoming<span class="notification">1</span></a>
+										<a class="dropdown-item" href="/dashboard/request.html"><img src="/images/icons/hand.png"/>Request<span class="notification">2</span></a>
+										<a class="dropdown-item" href="/dashboard/notification.html"><img src="/images/icons/bell.png"/>Notifications<span class="notification">2</span></a>
+										<a class="dropdown-item" href="/profile/activity.html"><img src="/images/icons/user.png"/>Activity</a>
+										<a class="dropdown-item" href="/profile/view.html"><img src="/images/icons/user.png"/>Your Profile</a>
+										<a class="dropdown-item" href=""><img src="/images/icons/cog.png"/>Account</a>
+										<a class="dropdown-item" href=""><img src="/images/icons/power.png"/>Log Out</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<form class="profile-form" novalidate="novalidate">
+						<h2>Create Your Profile</h2>
+						<div class="row">
+							<div class="profile-edit col col-sm-6">
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">First Name&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" placeholder="Enter your first name" data-validator-label="First Name" data-validator="required"/>
+										<div class="form-control-feedback"></div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">Last Name&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" placeholder="Enter your last name" data-validator-label="Last Name" data-validator="required"/>
+										<div class="form-control-feedback"></div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">Job Title&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<input type="text" class="typeahead form-control title-input" placeholder="Enter your professional job title." data-provide="typeahead" autocomplete="off" data-validator-label="Title" data-validator="required"/>
+										<div class="form-control-feedback"></div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">Company&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<input type="text" class="typeahead form-control company-input" placeholder="Enter your current company." data-provide="typeahead" autocomplete="off" data-validator-label="Company" data-validator="required"/>
+										<div class="form-control-feedback"></div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">About&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<textarea class="form-control" placeholder="Enter your bio" cols="8" data-validator-label="About" data-validator="required"></textarea>
+										<div class="form-control-feedback"></div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label">Skills&nbsp;<span>*</span></label>
+									<div class="col-sm-9">
+										<input type="text" class="typeahead form-control skill-input" placeholder="For ex, “data management” or “web development”" data-provide="typeahead" autocomplete="off"/>
+										<ul class="chips"></ul>
+									</div>
+								</div>
+							</div>
+							<div class="profile-actions col col-sm-3 offset-sm-1">
+								<div class="user-image">
+									<img src="/images/default-user.png" class="user" alt=""/>
+									<img src="/images/default-network.png" class="network" alt=""/>
+									<div class="helper-text">
+										<img src="/images/icons/plus.png" alt=""/>
+										<span>Add Photo</span>
+									</div>
+								</div>
+								<input class="hidden" type="file" accept="image/png"/>
+								<button type="submit" class="btn">
+									<span>Create Profile</span>
+								</button>
+								<div class="row hidden">
+									<div class="col">
+										<button type="button" class="btn btn-secondary">
+											<span>Cancel</span>
+										</button>
+									</div>
+									<div class="col">
+										<button type="submit" class="btn">
+											<span>Save</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="welcomeModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div>
+							<img src="/images/logo-icon.png" alt=""/>
+							<h2>Welcome to Cerebro!</h2>
+						</div>
+					</div>
+					<div class="modal-body">
+						<p>Thank you for joining us, Adam. Complete your profile so you can share knowledge and expertise with others in your social and professional networks!</p>
+						<button type="button" class="btn" data-dismiss="modal">
+							Get Started
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="/js/vendor/jquery.form-validation.min.js"></script>
+		<script src="/js/vendor/bootstrap3-typeahead.min.js"></script>
+		<script src="/js/main.js"></script>
+	</body>
+
+</html>
