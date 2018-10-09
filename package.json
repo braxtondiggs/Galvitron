@@ -1,0 +1,22 @@
+{
+  "name": "galvitron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server 'public' --files '**/*.*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://braxtondiggs@github.com/braxtondiggs/Galvitron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braxtondiggs/Galvitron/issues"
+  },
+  "homepage": "https://github.com/braxtondiggs/Galvitron#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.0"
+  }
+}
