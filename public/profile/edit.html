@@ -32,12 +32,11 @@
 						</div>
 						<div class="right-header col col-sm-3 flex-column">
 							<div class="flex-row">
-								<div>
+								<div class="user" data-popover-content="#welcomePopover2">
 									<img src="/images/icons/users.png" class="members-icon"/>
 								</div>
-								<div class="action-menu dropdown-toggle  dropdown flex-row" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<div class="action-menu dropdown flex-row" data-popover-content="#welcomePopover1">
 									<img src="https://via.placeholder.com/30x30" alt=""/>
-									<div class="menu-container"></div>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 										<a class="dropdown-item" href="/dashboard/upcoming.html"><img src="/images/icons/calendar.png"/>Upcoming<span class="notification">1</span></a>
 										<a class="dropdown-item" href="/dashboard/request.html"><img src="/images/icons/hand.png"/>Request<span class="notification">2</span></a>
@@ -111,7 +110,7 @@
 										<span>Add Photo</span>
 									</div>
 								</div>
-								<input class="hidden" type="file" accept="image/png"/>
+								<input id="profile-image-upload" class="hidden" type="file" accept="image/png"/>
 								<button type="submit" class="btn">
 									<span>Create Profile</span>
 								</button>
