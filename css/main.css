@@ -320,7 +320,7 @@ ul {
   margin: 0;
   min-width: 220px;
   padding: 0;
-  right: 0;
+  right: -10px;
 }
 
 .header-container .right-header .dropdown-menu .dropdown-item {
