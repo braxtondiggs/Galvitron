@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  $(document).on('submit', 'form', function(event) {//Any form submit
-    $('[data-validator]').each(function() {//find inputs to validate
+  $(document).on('submit', 'form:not(".search-form")', function(event) { //Any form submit
+    $('[data-validator]').each(function() { //find inputs to validate
       new Validator($(this), {
         language: {
           same: 'Passwords must match'
@@ -15,16 +15,23 @@
       event.preventDefault();
     }
   });
+  $(document).on('submit', 'form.search-form', (event) => { //Search Form submit
+    event.preventDefault();
+    window.location.replace('/search/index.html');
+  });
   $('.title-input').typeahead({ source: ['VP of Communications', 'VP of Investments', 'VP of Marketing', 'VP of Operations', 'VP of Sales'] });
   $('.company-input').typeahead({ source: ['Bücker Flugzeugbau', 'Buick', 'BUM Equipment', 'Bushwick Daily', 'Bushwick Kitchen', 'Buw Consulting', 'BUX'] });
-  $('.skill-input').typeahead({ source: ['investment banking', 'investment planning'], afterSelect:  function() { // after selecting a skill from dropdown, clear input and create a new chip
-    $('.chips').append(`<li>${$(this.$element.get(0)).val()}<span class="delete">&times;</span></li>`);
-    $(this.$element.get(0)).val('');
-  }});
-  $('.chips').on('click', 'li', function() {//remove profile skill chips
+  $('.skill-input').typeahead({
+    source: ['investment banking', 'investment planning'],
+    afterSelect: function() { // after selecting a skill from dropdown, clear input and create a new chip
+      $('.chips').append(`<li>${$(this.$element.get(0)).val()}<span class="delete">&times;</span></li>`);
+      $(this.$element.get(0)).val('');
+    }
+  });
+  $('.chips').on('click', 'li', function() { //remove profile skill chips
     $(this).remove();
   });
-  $('.user-image').on('click', () => $('input[type="file"]').trigger('click'));//fake clicks input for file upload
+  $('.user-image').on('click', () => $('input[type="file"]').trigger('click')); //fake clicks input for file upload
   $('#welcomeModal').modal('show'); //show welcome modal
   $(document).on('click', 'button.welcome.btn-1', function() { //open 1st & hide 2st welcome popover
     $('.profile-view .action-menu').popover('hide');
@@ -37,8 +44,8 @@
       }
     }).popover('show');
   });
-  $(document).on('click', 'button.welcome.btn-2', ()=> $('.right-header .user').popover('hide')); //hide 2st welcome popover
-  $('.profile-view .action-menu').popover({//Open Profile 1st welcome popover
+  $(document).on('click', 'button.welcome.btn-2', () => $('.right-header .user').popover('hide')); //hide 2st welcome popover
+  $('.profile-view .action-menu').popover({ //Open Profile 1st welcome popover
     html: true,
     placement: 'bottom',
     offset: '-225px 0',
@@ -61,4 +68,11 @@
       }
     }
   });
+
+  $('.pending nav').on('click', 'a', function(e) { //Pending Tabs
+    e.preventDefault()
+    $(this).tab('show');
+    $(this).parent().siblings('.card-container').hide();
+    $($(this).parent().siblings('.card-container').get($(this).index())).show();
+  })
 })();
