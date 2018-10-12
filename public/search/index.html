@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<div class="dashboard">
+		<div class="search">
 			<div class="header-container">
 				<div class="container">
 					<div class="row">
@@ -56,25 +56,108 @@
 				<div class="row no-gutters">
 					<div class="col-sm-5 user-list flex-column">
 						<div class="filter-header">
-							<div class="dropdown">
+							<div class="dropdown dropdown-select">
 								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Network (5)
+									Network&nbsp;<span>(5)</span>
 								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="header">
+										<h3>Filter by Your Networks</h3>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox" checked="checked"/>
+											<div></div>
+											<img src="https://via.placeholder.com/42x42" alt=""/>
+											Bux
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox" checked="checked"/>
+											<div></div>
+											<img src="https://via.placeholder.com/42x42" alt=""/>
+											WeWork NYC Soho
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											<img src="https://via.placeholder.com/42x42" alt=""/>
+											NYU Stern School of Business
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											<img src="https://via.placeholder.com/42x42" alt=""/>
+											Equinox NYC Columbus Circle
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											<img src="https://via.placeholder.com/42x42" alt=""/>
+											Soho House
+										</label>
+									</li>
+									<li class="flex-row dropdown-footer">
+										<button type="button" class="btn btn-secondary">Clear</button>
+										<button type="button" class="btn">Apply</button>
+									</li>
+								</ul>
 							</div>
-							<div class="dropdown">
+							<div class="dropdown dropdown-select">
 								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Favorites (0)
+									Favorites&nbsp;<span>(0)</span>
 								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="header">
+										<h3>Filter by Your Favorites Lists</h3>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox" checked="checked"/>
+											<div></div>
+											Lawyers
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox" checked="checked"/>
+											<div></div>
+											Real Estate Developers
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											Marketing Professionals
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											Programmers
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<label class="flex-row">
+											<input type="checkbox"/>
+											<div></div>
+											CEOs
+										</label>
+									</li>
+									<li class="flex-row dropdown-footer">
+										<button type="button" class="btn btn-secondary">Clear</button>
+										<button type="button" class="btn">Apply</button>
+									</li>
+								</ul>
 							</div>
 						</div>
 						<div class="scrollable list">
@@ -213,7 +296,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-7 user-info">
+					<div class="col-sm-7 user-info flex-column">
 						<div class="user-header flex-row">
 							<div>
 								<h3 class="name">Angelika Dehmell</h3>
@@ -222,15 +305,110 @@
 							</div>
 							<div class="user-actions">
 								<div class="favorite"></div>
-								<button type="button" class="btn">Book</button>
+								<button type="button" class="btn" data-toggle="modal" data-target="#bookModal">Book</button>
 							</div>
 						</div>
 						<div class="scrollable extended-user-info">
 							<p>Equity specialist focusing on a $30 billion equity platform including quantitative strategies, fundamental long/short equity, and portable alpha. Highly interested in equity research, credit research, and portfolio management. More than three
 								years’ experience within financial markets seeking advancement within this field, including a focus on regulatory and trade monitoring aspects. Experienced in the fundamentals of equities trading and have a comprehensive insight of the compliance
 								control room activities.</p>
-							<h3>Expertise</h3>
+							<div class="expertise">
+								<h4 class="expertise-title">Areas of Expertise</h4>
+								<ul>
+									<li>investment banking</li>
+									<li>crude oil derivatives</li>
+									<li>systems thinking</li>
+									<li>commodities trading</li>
+									<li>stocks</li>
+									<li>blockchain</li>
+								</ul>
+							</div>
+							<div class="network">
+								<h4 class="network-title">Networks You Share</h4>
+								<ul>
+									<li class="flex-row">
+										<div>
+											<img src="https://via.placeholder.com/66x66" alt=""/>
+										</div>
+										<div class="network-content">
+											<h5 class="title">BUX</h5>
+											<p>16 members</p>
+										</div>
+									</li>
+									<li class="flex-row">
+										<div>
+											<img src="https://via.placeholder.com/66x66" alt=""/>
+										</div>
+										<div class="network-content">
+											<h5 class="title">WeWork NYC Soho</h5>
+											<p>228 members</p>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="bookModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Book Conversation with:</h5>
+						<div class="flex-row modal-subtitle">
+							<img src="https://via.placeholder.com/50x50" alt=""/>
+							<div>
+								<h6>Adam Glassman</h6>
+								<h6>VP of Investments, Gas Trading</h6>
+								<h6>BUX</h6>
+							</div>
+						</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="dropdown dropdown-select selected-value">
+									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Booking Type
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Phone Call
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Video Chat
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Screen Share
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												In-Person
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Save changes</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>

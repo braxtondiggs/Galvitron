@@ -1,89 +1,58 @@
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/CircularStd-Black/CircularStd-Black.eot");
-  src: url("/fonts/CircularStd-Black/CircularStd-Black.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-Black/CircularStd-Black.woff2") format("woff2"),
-    url("/fonts/CircularStd-Black/CircularStd-Black.woff") format("woff"),
-    url("/fonts/CircularStd-Black/CircularStd-Black.ttf") format("truetype");
+  src: url('/fonts/CircularStd-Black/CircularStd-Black.eot');
+  src: url('/fonts/CircularStd-Black/CircularStd-Black.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-Black/CircularStd-Black.woff2') format("woff2"), url('/fonts/CircularStd-Black/CircularStd-Black.woff') format("woff"), url('/fonts/CircularStd-Black/CircularStd-Black.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/CircularStd-Medium/CircularStd-Medium.eot");
-  src: url("/fonts/CircularStd-Medium/CircularStd-Medium.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-Medium/CircularStd-Medium.woff2") format("woff2"),
-    url("/fonts/CircularStd-Medium/CircularStd-Medium.woff") format("woff"),
-    url("/fonts/CircularStd-Medium/CircularStd-Medium.ttf") format("truetype");
+  src: url('/fonts/CircularStd-Medium/CircularStd-Medium.eot');
+  src: url('/fonts/CircularStd-Medium/CircularStd-Medium.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-Medium/CircularStd-Medium.woff2') format("woff2"), url('/fonts/CircularStd-Medium/CircularStd-Medium.woff') format("woff"), url('/fonts/CircularStd-Medium/CircularStd-Medium.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std Book";
+  font-family: 'Circular Std Book';
   font-style: italic;
   font-weight: normal;
-  src: url("/fonts/CircularStd-BookItalic/CircularStd-BookItalic.eot");
-  src: url("/fonts/CircularStd-BookItalic/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-BookItalic/CircularStd-BookItalic.woff2") format("woff2"),
-    url("/fonts/CircularStd-BookItalic/CircularStd-BookItalic.woff") format("woff"),
-    url("/fonts/CircularStd-BookItalic/CircularStd-BookItalic.ttf") format("truetype");
+  src: url('/fonts/CircularStd-BookItalic/CircularStd-BookItalic.eot');
+  src: url('/fonts/CircularStd-BookItalic/CircularStd-BookItalic.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-BookItalic/CircularStd-BookItalic.woff2') format("woff2"), url('/fonts/CircularStd-BookItalic/CircularStd-BookItalic.woff') format("woff"), url('/fonts/CircularStd-BookItalic/CircularStd-BookItalic.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: italic;
   font-weight: bold;
-  src: url("/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.eot");
-  src: url("/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.woff2") format("woff2"),
-    url("/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.woff") format("woff"),
-    url("/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.ttf") format("truetype");
+  src: url('/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.eot');
+  src: url('/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.woff2') format("woff2"), url('/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.woff') format("woff"), url('/fonts/CircularStd-BoldItalic/CircularStd-BoldItalic.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/CircularStd-Bold/CircularStd-Bold.eot");
-  src: url("/fonts/CircularStd-Bold/CircularStd-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-Bold/CircularStd-Bold.woff2") format("woff2"),
-    url("/fonts/CircularStd-Bold/CircularStd-Bold.woff") format("woff"),
-    url("/fonts/CircularStd-Bold/CircularStd-Bold.ttf") format("truetype");
+  src: url('/fonts/CircularStd-Bold/CircularStd-Bold.eot');
+  src: url('/fonts/CircularStd-Bold/CircularStd-Bold.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-Bold/CircularStd-Bold.woff2') format("woff2"), url('/fonts/CircularStd-Bold/CircularStd-Bold.woff') format("woff"), url('/fonts/CircularStd-Bold/CircularStd-Bold.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: italic;
   font-weight: 900;
-  src: url("/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.eot");
-  src: url("/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.woff2") format("woff2"),
-    url("/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.woff") format("woff"),
-    url("/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.ttf") format("truetype");
+  src: url('/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.eot');
+  src: url('/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.woff2') format("woff2"), url('/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.woff') format("woff"), url('/fonts/CircularStd-BlackItalic/CircularStd-BlackItalic.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-style: italic;
   font-weight: 500;
-  src: url("/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.eot");
-  src: url("/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.woff2") format("woff2"),
-    url("/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.woff") format("woff"),
-    url("/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.ttf") format("truetype");
+  src: url('/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.eot');
+  src: url('/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.woff2') format("woff2"), url('/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.woff') format("woff"), url('/fonts/CircularStd-MediumItalic/CircularStd-MediumItalic.ttf') format("truetype");
 }
-
 @font-face {
-  font-family: "Circular Std Book";
+  font-family: 'Circular Std Book';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/CircularStd-Book/CircularStd-Book.eot");
-  src: url("/fonts/CircularStd-Book/CircularStd-Book.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/CircularStd-Book/CircularStd-Book.woff2") format("woff2"),
-    url("/fonts/CircularStd-Book/CircularStd-Book.woff") format("woff"),
-    url("/fonts/CircularStd-Book/CircularStd-Book.ttf") format("truetype");
+  src: url('/fonts/CircularStd-Book/CircularStd-Book.eot');
+  src: url('/fonts/CircularStd-Book/CircularStd-Book.eot?#iefix') format("embedded-opentype"), url('/fonts/CircularStd-Book/CircularStd-Book.woff2') format("woff2"), url('/fonts/CircularStd-Book/CircularStd-Book.woff') format("woff"), url('/fonts/CircularStd-Book/CircularStd-Book.ttf') format("truetype");
 }
 
 .hidden {
@@ -99,7 +68,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: linear-gradient(to right, #fbfeff, #fbfefe, #fcfffd);
   color: #464646;
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   height: 100%;
 }
 
@@ -119,7 +88,7 @@ input:focus,
 textarea:focus {
   background-color: #fff;
   border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, .25);
+  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.25);
   color: #969696;
 }
 
@@ -183,11 +152,11 @@ ul {
 }
 
 .modal {
-  transform: translateY(-50%);
   top: 50%;
+  transform: translateY(-50%);
 }
 
-.header-container~.container {
+.header-container ~ .container {
   max-width: 1000px;
 }
 
@@ -198,7 +167,6 @@ ul {
   font-size: 14px;
   line-height: 28px;
 }
-
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -219,7 +187,7 @@ ul {
 
 .header-container {
   background-color: #fff;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .28);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.28);
   display: block;
   position: sticky;
   top: 0;
@@ -227,7 +195,6 @@ ul {
 }
 
 .header-container .container {
-  padding-top: 0;
   max-width: initial;
   padding: 0 50px;
 }
@@ -237,9 +204,9 @@ ul {
 }
 
 .logo {
+  color: #57afca;
   font-size: 24px;
   font-weight: 900;
-  color: #57afca;
   text-transform: uppercase;
 }
 
@@ -277,7 +244,7 @@ ul {
   width: 33px;
 }
 
-.header-container .right-header>.flex-row {
+.header-container .right-header > .flex-row {
   justify-content: flex-end;
 }
 
@@ -288,18 +255,18 @@ ul {
 }
 
 .header-container .right-header .action-menu::after {
-  width: 0;
-  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #646464;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  height: 0;
   position: absolute;
+  right: -10px;
   top: 50%;
   transform: translate(0, -50%);
-  content: '';
-  display: inline-block;
-  right: -10px;
-  cursor: pointer;
+  width: 0;
 }
 
 .header-container .right-header .action-menu img {
@@ -310,8 +277,8 @@ ul {
   width: 30px;
 }
 
-.header-container .right-header .dropdown:hover>.dropdown-menu,
-.card .card-header .dropdown:hover>.dropdown-menu {
+.card .card-header .dropdown:hover > .dropdown-menu,
+.header-container .right-header .dropdown:hover > .dropdown-menu {
   cursor: pointer;
   display: block;
 }
@@ -347,7 +314,6 @@ ul {
   float: right;
   margin-top: 6px;
 }
-
 /* ==========================================================================
    Auth
    ========================================================================== */
@@ -403,7 +369,7 @@ ul {
   max-width: 366px !important;
 }
 
-.auth-form>div {
+.auth-form > div {
   margin-bottom: 20px;
 }
 
@@ -447,7 +413,7 @@ ul {
 
 .form-successful p {
   color: #62828b;
-  font-family: "Circular Std Book";
+  font-family: 'Circular Std Book';
   font-size: 16px;
   line-height: 21px;
   margin: 10px 0;
@@ -472,11 +438,10 @@ ul {
   margin-bottom: 55px;
 }
 
-.password-title+.auth-form {
+.password-title + .auth-form {
   margin: initial;
   max-width: initial;
 }
-
 /* ==========================================================================
    Profile
    ========================================================================== */
@@ -505,14 +470,14 @@ ul {
   color: #025069;
   font-size: 22px;
   font-weight: bold;
-  margin: .83em 0 40px;
+  margin: 0.83em 0 40px;
 }
 
-.profile-edit>div {
+.profile-edit > div {
   margin-bottom: 24px;
 }
 
-.profile>.container {
+.profile > .container {
   padding-top: 35px;
 }
 
@@ -520,7 +485,7 @@ ul {
   height: 156px;
 }
 
-.profile textarea.form-control~small {
+.profile textarea.form-control ~ small {
   bottom: 9px;
   color: #aaa;
   font-size: 12px;
@@ -562,8 +527,8 @@ ul {
 .profile .user-image .helper-text img {
   color: #646469;
   display: block;
-  width: 18px;
   margin: 0 auto 2px;
+  width: 18px;
 }
 
 .profile .user-image .helper-text span {
@@ -573,8 +538,8 @@ ul {
 }
 
 .profile-actions .btn {
-  width: 100%;
   min-width: initial;
+  width: 100%;
 }
 
 .profile-form .chips {
@@ -582,14 +547,14 @@ ul {
 }
 
 .profile-form .chips li {
-  height: 28px;
-  border: solid 1px #969696;
   background-color: #fff;
-  font-size: 16px;
-  padding: 0 16px;
-  display: inline-block;
-  margin-right: 8px;
+  border: solid 1px #969696;
   cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  margin-right: 8px;
+  padding: 0 16px;
 }
 
 .profile-form .chips li:last-child {
@@ -597,8 +562,8 @@ ul {
 }
 
 .profile-form .chips li .delete {
-  float: right;
   color: #b4b4b4;
+  float: right;
   margin-left: 8px;
 }
 
@@ -615,7 +580,7 @@ ul {
   text-align: center;
 }
 
-#welcomeModal .modal-content .modal-header>div {
+#welcomeModal .modal-content .modal-header > div {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -628,9 +593,9 @@ ul {
 
 #welcomeModal .modal-content .modal-header h2 {
   color: #fff;
-  margin-bottom: 0;
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 #welcomeModal .modal-content .modal-body {
@@ -654,7 +619,8 @@ ul {
   margin: 0 0 23px;
 }
 
-.profile-view .company, .profile-view .network {
+.profile-view .company,
+.profile-view .network {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -688,8 +654,8 @@ ul {
   color: #464646;
   display: inline-block;
   font-size: 18px;
-  margin-top: 12px;
   margin-right: 6px;
+  margin-top: 12px;
   padding: 7px 22px;
   text-align: center;
 }
@@ -705,8 +671,8 @@ ul {
 }
 
 .profile-view .network ul li {
-  margin-bottom: 21px;
   justify-content: flex-start;
+  margin-bottom: 21px;
 }
 
 .profile-view .network ul img {
@@ -717,12 +683,12 @@ ul {
 }
 
 .profile-view .network ul h5.title {
+  color: #464646;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   margin: 0;
   text-align: left;
-  color: #464646;
 }
 
 .profile-view .network ul p {
@@ -733,7 +699,7 @@ ul {
   margin: 0;
 }
 
-.profile-view .profile-actions>div {
+.profile-view .profile-actions > div {
   position: fixed;
 }
 
@@ -746,8 +712,8 @@ ul {
   border-radius: 50%;
   display: block;
   height: 280px;
-  width: 280px;
   object-fit: cover;
+  width: 280px;
   z-index: 0;
 }
 
@@ -776,21 +742,22 @@ ul {
   text-align: center;
 }
 
-.profile-actions .edit-profile .ng-fa-icon, .profile-actions .edit-profile a {
+.profile-actions .edit-profile .ng-fa-icon,
+.profile-actions .edit-profile a {
   color: #57afca;
   font-size: 17px;
   font-weight: 500;
 }
 
 .popover {
-  max-width: 100%;
   background-color: #025069;
   border: solid 1px #025069;
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
   height: 160px;
-  margin-top: 25px;
-  padding: 18px 22px;
   height: initial;
+  margin-top: 25px;
+  max-width: 100%;
+  padding: 18px 22px;
 }
 
 .popover.bs-popover-bottom .arrow {
@@ -812,25 +779,25 @@ ul {
   margin: 0 0 18px;
 }
 
-.welcome-wrapper .icon-row>div {
+.welcome-wrapper .icon-row > div {
+  flex: 1 1 0;
   margin-right: 4px;
   text-align: center;
-  flex: 1 1 0;
 }
 
-.welcome-wrapper .icon-row>div>div {
+.welcome-wrapper .icon-row > div > div {
   color: #fff;
+  font-family: 'Circular Std';
   font-size: 12px;
   line-height: 15px;
-  font-family: 'Circular Std';
   margin-top: 8px;
 }
 
-.welcome-wrapper .icon-row>div:last-child {
+.welcome-wrapper .icon-row > div:last-child {
   margin-right: 0;
 }
 
-.welcome-wrapper .icon-row>div img {
+.welcome-wrapper .icon-row > div img {
   width: 30px;
 }
 
@@ -838,11 +805,11 @@ ul {
   background: transparent;
   border: solid 1px #fff;
   color: #fff;
+  cursor: pointer;
   font-size: 14px;
   height: 30px;
   margin-top: 24px;
   width: 86px;
-  cursor: pointer;
 }
 
 .welcome-wrapper-2 {
@@ -869,7 +836,6 @@ ul {
 .welcome-wrapper-2 button {
   margin-top: 14px;
 }
-
 /* ==========================================================================
    Dashboard
    ========================================================================== */
@@ -884,9 +850,9 @@ ul {
   font-weight: 500;
 }
 
-.dashboard .profile-information>div {
-  position: fixed;
+.dashboard .profile-information > div {
   max-width: 168px;
+  position: fixed;
 }
 
 .dashboard .profile-information img {
@@ -922,20 +888,20 @@ ul {
 
 .dashboard .profile-information .navigation li a .badge {
   background-color: #57afca;
+  border-radius: initial;
   color: #fff;
   float: right;
   font-size: 13px;
+  font-weight: normal;
   height: 18px;
   text-align: center;
   width: 18px;
-  font-weight: normal;
-  border-radius: initial;
 }
 
-.dashboard .profile-information .navigation li.active a, .dashboard .profile-information .navigation li:hover a {
+.dashboard .profile-information .navigation li.active a,
+.dashboard .profile-information .navigation li:hover a {
   color: #025069;
 }
-
 /* ==========================================================================
    Card
    ========================================================================== */
@@ -943,15 +909,15 @@ ul {
   background-color: #fff;
   border: 1px solid #d2d2d2;
   border-radius: 4px;
-  margin-bottom: 32px;
-  flex: 1 1 0%;
   box-sizing: border-box;
+  flex: 1 1 0;
+  margin-bottom: 32px;
 }
 
 .card .card-header {
+  background-color: initial;
   border-bottom: 1px solid #d2d2d2;
   padding: 8px 24px;
-  background-color: initial;
 }
 
 .card .card-header h4 {
@@ -964,9 +930,9 @@ ul {
 }
 
 .card .card-header h4 img {
-  width: 28px;
   margin: -3px 6px 0;
   vertical-align: middle;
+  width: 28px;
 }
 
 .card .card-header h4 .date {
@@ -982,12 +948,12 @@ ul {
 }
 
 .card .card-header h4 .dropdown .dropdown-menu {
-  top: -11px;
-  right: -25px;
-  width: 226px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
   left: initial;
   padding-right: 25px;
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+  right: -25px;
+  top: -11px;
+  width: 226px;
 }
 
 .card .card-header h4 .dropdown .dropdown-menu img.menu {
@@ -995,19 +961,19 @@ ul {
 }
 
 .card .card-header h4 .dropdown .dropdown-menu a {
+  color: #646464;
   display: block;
+  font-family: 'CircularStd';
   font-size: 14px;
   font-weight: 500;
-  color: #646464;
-  font-family: 'CircularStd';
-  padding: .25rem 19px;
+  padding: 0.25rem 19px;
   width: calc(100% + 25px);
 }
 
 .card .card-header h4 .dropdown .menu {
-  width: 15px;
-  margin: 2px 0 0;
   cursor: pointer;
+  margin: 2px 0 0;
+  width: 15px;
 }
 
 .card-content {
@@ -1042,8 +1008,8 @@ ul {
   font-family: 'Circular Std Book';
   font-size: 16px;
   line-height: 21px;
-  width: calc(100% + 70px);
   margin: 16px 0;
+  width: calc(100% + 70px);
 }
 
 .card-content .network-image img {
@@ -1055,10 +1021,10 @@ ul {
   background-color: #fff;
   border: solid 1px #d2d2d2;
   border-radius: 4px;
+  line-height: 1.15;
   max-height: 116px;
   text-align: center;
   width: 116px;
-  line-height: 1.15;
 }
 
 .calender-card .month {
@@ -1093,7 +1059,6 @@ ul {
   font-weight: 500;
   line-height: 24px;
 }
-
 /* ==========================================================================
    Upcoming
    ========================================================================== */
@@ -1109,16 +1074,15 @@ ul {
   max-width: 600px;
 }
 
-.upcoming .card-content .user-image,
-.upcoming .card-content .content-area {
+.upcoming .card-content .content-area,
+.upcoming .card-content .user-image {
   margin-right: 20px;
 }
 
 .upcoming .card-content .content-area {
-  flex: 1 1 0%;
   box-sizing: border-box;
+  flex: 1 1 0;
 }
-
 /* ==========================================================================
    Notifications
    ========================================================================== */
@@ -1131,24 +1095,23 @@ ul {
 }
 
 .notifications .card-content {
-  place-content: center flex-start;
   align-items: center;
-  max-height: 100%;
-  flex-direction: row;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  place-content: center flex-start;
 }
 
-.notifications .card-content .user-image,
-.notifications .card-content .content-area {
+.notifications .card-content .content-area,
+.notifications .card-content .user-image {
   margin-right: 20px;
 }
 
 .notifications .card-content .content-area {
-  flex: 1 1 0%;
   box-sizing: border-box;
+  flex: 1 1 0;
 }
-
 /* ==========================================================================
    Pending
    ========================================================================== */
@@ -1171,8 +1134,8 @@ ul {
   margin: 16px 0;
 }
 
-.pending .card-content .user-image,
-.pending .card-content .content-area {
+.pending .card-content .content-area,
+.pending .card-content .user-image {
   margin-right: 20px;
 }
 
@@ -1183,8 +1146,8 @@ ul {
   border-left: 0;
   border-top-right-radius: 4px;
   margin-bottom: 32px;
-  padding: 10px 20px 24px;
   max-width: 282px;
+  padding: 10px 20px 24px;
   width: 100%;
 }
 
@@ -1198,9 +1161,9 @@ ul {
 }
 
 .pending h4 img {
-  width: 28px;
   margin: -3px 6px 0 0;
   vertical-align: middle;
+  width: 28px;
 }
 
 .pending .form-check {
@@ -1235,7 +1198,7 @@ ul {
   display: none;
 }
 
-.pending input[type="radio"]+label::before {
+.pending input[type="radio"] + label::before {
   background-color: #d8d8d8;
   border-radius: 50%;
   content: '';
@@ -1247,11 +1210,11 @@ ul {
   width: 12px;
 }
 
-.pending input[type="radio"]:checked+label::before {
+.pending input[type="radio"]:checked + label::before {
   background-color: #57afca;
 }
 
-.pending input[type="radio"]:checked~textarea {
+.pending input[type="radio"]:checked ~ textarea {
   display: block;
 }
 
@@ -1260,20 +1223,20 @@ ul {
 }
 
 .pending .nav-pills .nav-link {
-  font-family: CircularStd;
-  font-size: 18px;
-  color: #3e3e3e;
-  font-weight: bold;
   border: solid 1px #969696;
   border-radius: 0;
+  color: #3e3e3e;
+  font-family: CircularStd;
+  font-size: 18px;
+  font-weight: bold;
   max-width: 268px;
   padding: 5px 1rem;
 }
 
 .pending .nav-pills .nav-link.active {
-  color: #fff;
   background-color: #025069;
   border: 1px solid #025069;
+  color: #fff;
 }
 
 .pending .nav-pills .nav-link:first-child {
@@ -1289,16 +1252,16 @@ ul {
 }
 
 .your-pending .pending-container h4 {
-  text-align: center;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .your-pending .pending-container h3 {
+  color: #464646;
   font-size: 20px;
   font-weight: 900;
-  text-align: center;
-  color: #464646;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .your-pending .pending-container ul {
@@ -1306,13 +1269,12 @@ ul {
 }
 
 .your-pending .pending-container ul li {
-  font-size: 14px;
+  color: #3e3e3e;
   font-family: 'Circular Std Book';
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
-  color: #3e3e3e;
 }
-
 /* ==========================================================================
    Search
    ========================================================================== */
@@ -1320,32 +1282,132 @@ ul {
   background-color: #fff;
   border: 1px solid #d2d2d2;
   border-radius: 6px;
-  max-height: 587px;
-  padding: 0;
   height: 100%;
   margin-top: 32px;
+  max-height: 587px;
   overflow: hidden;
+  padding: 0;
 }
 
 .search-card .filter-header {
-  padding: 14px 16px;
   max-height: 55px;
+  padding: 14px 16px;
+}
+
+.dropdown-select .dropdown-menu {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+  width: 280px;
+}
+
+.dropdown-select .btn[aria-expanded="true"] {
+  background-color: #025069 !important;
+  color: #fff !important;
+}
+
+.dropdown-select .btn[aria-expanded="true"]::after {
+  border-bottom: 0.3em solid;
+  border-top: 0;
+}
+
+.dropdown-select .dropdown-item {
+  cursor: pointer;
+  padding: 0.25rem 18px;
+  position: relative;
+}
+
+.dropdown-select .dropdown-menu h3 {
+  color: #00506a;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 8px 0 16px;
+  text-align: center;
+}
+
+.dropdown-select .dropdown-item label {
+  align-items: center;
+  color: #464646;
+  font-family: 'Circular Std Book';
+  font-size: 15px;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding: 4px 0;
+  white-space: normal;
+}
+
+.dropdown-select .dropdown-item label div {
+  border: solid 1px #969696;
+  border-radius: 2px;
+  height: 16px;
+  margin-right: 18px;
+  min-width: 16px;
+  position: relative;
+}
+
+.dropdown-select .dropdown-item input[type="checkbox"]:checked ~ div {
+  background-color: #00506a;
+  border-color: #025069;
+}
+
+.dropdown-select .dropdown-item input[type="checkbox"]:checked ~ div::after {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  color: #fff;
+  content: '';
+  display: inline-block;
+  height: 6px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 9px;
+}
+
+.dropdown-select .dropdown-item input[type="checkbox"] {
+  display: none;
+}
+
+.dropdown-select .dropdown-item img {
+  margin-right: 10px;
+}
+
+.dropdown-select .dropdown-footer {
+  padding: 8px 18px;
+}
+
+.dropdown-select .dropdown-footer .btn {
+  background-color: #57afca;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Circular Std Book';
+  font-size: 16px;
+  height: 26px;
+  min-width: initial;
+}
+
+.dropdown-select .dropdown-footer .btn.btn-secondary {
+  background-color: #b4b4b4;
+}
+
+.dropdown-select .dropdown-footer .btn:first-child {
+  margin-right: 13px;
 }
 
 .search-card .dropdown {
   display: inline-block;
 }
 
-.search-card .dropdown .btn {
-  font-size: 15px;
-  font-weight: 500;
-  color: #6e6e6e;
+.dropdown-select .btn {
   background-color: #fff;
   border: solid 1px #969696;
   border-radius: initial;
+  color: #6e6e6e;
+  font-size: 15px;
+  font-weight: 500;
+  height: 28px;
   padding: 0;
   width: 126px;
-  height: 28px;
 }
 
 .search-card .dropdown .dropdown-toggle::after {
@@ -1358,27 +1420,27 @@ ul {
 }
 
 .search-card .filter-results {
-  height: 44px;
   border-bottom: 1px solid #d2d2d2;
+  height: 44px;
 }
 
 .search-card .filter-results h5 {
-  font-size: 14px;
-  text-align: center;
-  font-family: 'Circular Std Book';
-  line-height: 44px;
   color: #646464;
+  font-family: 'Circular Std Book';
+  font-size: 14px;
+  line-height: 44px;
+  text-align: center;
 }
 
-.search-card .member-list>div {
-  place-content: center space-between;
+.search-card .member-list > div {
   align-items: center;
+  place-content: center space-between;
 }
 
 .search-card .member-list li {
   border-bottom: solid 1px #d2d2d2;
-  padding: 17px;
   cursor: pointer;
+  padding: 17px;
 }
 
 .search-card .member-list li.active {
@@ -1396,23 +1458,23 @@ ul {
 }
 
 .search-card .member-info .name {
+  color: #464646;
   font-size: 17px;
   font-weight: bold;
-  color: #464646;
 }
 
+.search-card .member-image,
 .search-card .member-info,
-.search-card .profile-network,
-.search-card .member-image {
+.search-card .profile-network {
   margin-right: 16px;
 }
 
 .search-card .member-info .company,
 .search-card .member-info .network {
+  color: #5a5a5a;
   font-family: 'Circular Std Book';
   font-size: 15px;
   line-height: 20px;
-  color: #5a5a5a;
   margin-bottom: 0;
 }
 
@@ -1426,11 +1488,11 @@ ul {
 }
 
 .search-card .favorite {
+  background-image: url('/images/icons/heart-outline.png');
   display: block;
-  width: 24px;
   height: 24px;
   margin-top: 10px;
-  background-image: url('/images/icons/heart-outline.png');
+  width: 24px;
 }
 
 .search-card .favorite.active {
@@ -1443,34 +1505,35 @@ ul {
   margin-top: 55px;
 }
 
-.search-card .user-list,
-.search-card .user-info {
+.search-card .user-info,
+.search-card .user-list {
   max-height: 587px;
   overflow: hidden;
 }
 
 .search-card .user-info .user-header {
-  justify-content: flex-start;
-  padding: 15px 36px;
-  max-height: 100px;
   border-bottom: 1px solid #d2d2d2;
+  height: 100%;
+  justify-content: flex-start;
+  max-height: 100px;
+  padding: 15px 36px;
 }
 
-.search-card .user-info .user-header>div:first-child {
+.search-card .user-info .user-header > div:first-child {
   flex: 1 1 0;
 }
 
 .search-card .user-info .user-header h3 {
+  color: #464646;
   font-size: 18px;
   font-weight: bold;
-  color: #464646;
 }
 
 .search-card .user-info .user-header h4 {
+  color: #5a5a5a;
   font-family: 'Circular Std Book';
   font-size: 15px;
   line-height: 20px;
-  color: #5a5a5a;
   margin-bottom: 0;
 }
 
@@ -1487,10 +1550,10 @@ ul {
 .search-card .user-info .user-header .user-actions .btn {
   font-size: 16px;
   font-weight: bold;
-  padding: 0;
-  width: 84px;
   height: 24px;
   min-width: initial;
+  padding: 0;
+  width: 84px;
 }
 
 .extended-user-info {
@@ -1498,13 +1561,120 @@ ul {
 }
 
 .extended-user-info p {
-  font-size: 15px;
-  line-height: 20px;
   color: #464646;
   font-family: 'Circular Std Book';
+  font-size: 15px;
+  line-height: 20px;
   margin-bottom: 24px;
+}
+
+.extended-user-info .expertise .expertise-title,
+.extended-user-info .network .network-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+
+.extended-user-info .expertise ul {
+  margin: -15px 0 24px;
+}
+
+.extended-user-info .expertise ul li {
+  border: solid 1px #464646;
+  color: #464646;
+  display: inline-block;
+  font-family: 'Circular Std Book';
+  font-size: 14.5px;
+  margin-right: 6px;
+  margin-top: 12px;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.extended-user-info .network ul {
+  margin: 0 0 46px;
+}
+
+.extended-user-info .network ul li {
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 21px;
+}
+
+.extended-user-info .network ul img {
+  display: block;
+  height: 54px;
+  margin-right: 15px;
+  width: 54px;
+}
+
+.extended-user-info .network ul h5.title {
+  color: #464646;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.extended-user-info .network ul p {
+  color: #646464;
+  font-family: 'Circular Std Book';
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .scrollable {
   overflow-y: scroll;
+}
+/* ==========================================================================
+   Book Modal
+   ========================================================================== */
+#bookModal .modal-content {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+#bookModal .modal-title {
+  color: #025069;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#bookModal .modal-subtitle img {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 13px;
+  width: 50px;
+}
+
+#bookModal .modal-subtitle h6 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  margin: 0;
+}
+
+#bookModal .modal-header {
+  border: 0;
+  display: block;
+}
+
+#bookModal .modal-header button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+#bookModal .dropdown,
+#bookModal .dropdown .btn {
+  overflow: hidden;
+  width: 100%;
+}
+
+#bookModal .dropdown label {
+  display: inline-block;
 }
