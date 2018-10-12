@@ -167,6 +167,10 @@ ul {
   font-size: 14px;
   line-height: 28px;
 }
+
+.dropdown-item:active {
+  background-color: rgba(2, 80, 105, 0.2);
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -973,7 +977,7 @@ ul {
 .card .card-header h4 .date {
   color: #646464;
   float: right;
-  font-family: 'CircularStd';
+  font-family: 'Circular Std Book';
   font-size: 13px;
   font-style: italic;
 }
@@ -998,7 +1002,7 @@ ul {
 .card .card-header h4 .dropdown .dropdown-menu a {
   color: #646464;
   display: block;
-  font-family: 'CircularStd';
+  font-family: 'Circular Std';
   font-size: 14px;
   font-weight: 500;
   padding: 0.25rem 19px;
@@ -1031,12 +1035,15 @@ ul {
   margin: 0 0 8px;
 }
 
-.card-content .content-area .information {
+.card-content .content-area .information,
+.card-content .content-area .title {
   color: #646464;
   font-family: 'Circular Std Book';
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
+  margin: 0;
+  text-align: left;
 }
 
 .card-content .content-area p:not(.time) {
@@ -1261,7 +1268,7 @@ ul {
   border: solid 1px #969696;
   border-radius: 0;
   color: #3e3e3e;
-  font-family: CircularStd;
+  font-family: 'Circular Std';
   font-size: 18px;
   font-weight: bold;
   max-width: 268px;
@@ -1543,7 +1550,8 @@ ul {
 .search-card .user-info,
 .search-card .user-list {
   max-height: 587px;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: visible;
 }
 
 .search-card .user-info .user-header {
@@ -1666,9 +1674,19 @@ ul {
 /* ==========================================================================
    Book Modal
    ========================================================================== */
+#bookModal {
+  min-height: 600px;
+}
+
+#bookModal .modal-dialog {
+  max-width: 660px !important;
+}
+
 #bookModal .modal-content {
   border-radius: 4px;
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+  min-width: 660px;
+  min-height: 600px;
 }
 
 #bookModal .modal-title {
@@ -1704,7 +1722,6 @@ ul {
   top: 1rem;
 }
 
-#bookModal .dropdown,
 #bookModal .dropdown .btn {
   overflow: hidden;
   width: 100%;
