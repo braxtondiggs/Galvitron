@@ -175,19 +175,19 @@ ul {
    Header
    ========================================================================== */
 .basic-header-container {
+  align-items: center;
+  display: flex;
   height: 48px;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1100px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .basic-header-container .nav a {
-  font-size: 14px;
   color: #464646;
   font-family: 'Circular Std Book';
+  font-size: 14px;
   margin-left: 24px;
 }
 
@@ -358,8 +358,8 @@ ul {
   border-radius: 4px;
   height: 40px;
   margin: 7px 0 21px;
-  width: 100%;
   padding: 0 18px;
+  width: 100%;
 }
 
 .auth-form {
@@ -385,16 +385,16 @@ ul {
 
 .more-actions p {
   color: #025069;
+  font-family: 'Circular Std Book';
   font-size: 15px;
   font-weight: 500;
   margin: 0;
-  font-family: 'Circular Std Book';
 }
 
 .more-actions p a {
   color: #025069;
-  font-weight: bold;
   font-family: 'Circular Std';
+  font-weight: bold;
 }
 
 .forgot-container,
@@ -406,23 +406,23 @@ ul {
 
 .signup-container-intro .title {
   font-size: 26px;
-  text-align: left;
   font-weight: bold;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .signup-container-intro p.intro {
-  font-size: 18px;
-  font-family: 'Circular Std Book';
-  margin-bottom: 40px;
-  line-height: 26px;
   color: #025069;
+  font-family: 'Circular Std Book';
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 40px;
 }
 
 .signup-container-intro .btn {
   height: 44px;
-  min-width: 168px;
   margin-bottom: 24px;
+  min-width: 168px;
 }
 
 .signup-container-intro .btn:hover {
@@ -431,24 +431,24 @@ ul {
 
 .forgot-container {
   margin: 0 auto;
-  text-align: center;
   max-width: 400px;
+  text-align: center;
 }
 
 .forgot-container p {
-  font-size: 18px;
   color: #025069;
   font-family: 'Circular Std Book';
+  font-size: 18px;
   margin-bottom: 32px;
 }
 
 .form-successful {
-  width: 433px;
-  position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  position: absolute;
   text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 433px;
 }
 
 .form-successful p.successful {
@@ -460,8 +460,8 @@ ul {
 
 .form-successful a {
   color: #025069;
-  font-weight: 900;
   font-size: 20px;
+  font-weight: 900;
 }
 
 .invalid-feedback {
@@ -1550,8 +1550,8 @@ ul {
 .search-card .user-info,
 .search-card .user-list {
   max-height: 587px;
-  overflow-y: hidden;
   overflow-x: visible;
+  overflow-y: hidden;
 }
 
 .search-card .user-info .user-header {
@@ -1685,8 +1685,33 @@ ul {
 #bookModal .modal-content {
   border-radius: 4px;
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
-  min-width: 660px;
   min-height: 600px;
+  min-width: 660px;
+}
+
+#bookModal .modal-body {
+  margin: 24px auto 0;
+  max-width: 408px;
+  padding: 0;
+  width: 100%;
+}
+
+#bookModal .modal-body > .flex-row {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+#bookModal .modal-body .flex-row > div {
+  flex: 1;
+  margin-right: 16px;
+}
+
+#bookModal .modal-body .flex-row > div .form-group {
+  margin-bottom: 0;
+}
+
+#bookModal .modal-body .flex-row .dropdown:last-child {
+  margin-right: 0;
 }
 
 #bookModal .modal-title {
@@ -1724,9 +1749,97 @@ ul {
 
 #bookModal .dropdown .btn {
   overflow: hidden;
+  padding: 0 14px;
+  text-align: left;
   width: 100%;
+}
+
+#bookModal .dropdown .btn label {
+  margin-bottom: 0;
 }
 
 #bookModal .dropdown label {
   display: inline-block;
+}
+
+#bookModal .dropdown .dropdown-toggle::after {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#bookModal .form-group > label {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#bookModal .form-group textarea {
+  font-size: 14px;
+  min-height: 88px;
+}
+
+#bookModal .form-group textarea::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+#bookModal .modal-footer {
+  border: 0;
+  margin: 0 auto;
+  max-width: 408px;
+  padding: 0 0 36px;
+  width: 100%;
+}
+
+#bookModal .modal-footer .btn {
+  width: 100%;
+}
+
+.dropdown-date .dropdown-menu {
+  padding: 0;
+}
+
+.Zebra_DatePicker {
+  position: inherit;
+}
+
+.Zebra_DatePicker .dp_next,
+.Zebra_DatePicker .dp_previous {
+  color: #b4b4b4;
+}
+
+.Zebra_DatePicker .dp_caption {
+  color: #025069;
+  font-family: 'Circular Std';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Zebra_DatePicker .dp_daypicker tr:first-child th {
+  color: #646464;
+  font-family: 'Circular Std';
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.Zebra_DatePicker .dp_daypicker tr:not(:first-child) td {
+  border: solid 1px #b4b4b4;
+  border-radius: 0;
+  font-family: 'Circular Std Book';
+  font-size: 12.5px;
+}
+
+.Zebra_DatePicker .dp_daypicker tr:not(:first-child) td:not(.dp_disabled) {
+  color: #646464;
+}
+
+.Zebra_DatePicker .dp_daypicker tr:not(:first-child) td.dp_selected {
+  background-color: #57afca;
+  color: #fff;
+}
+
+.Zebra_DatePicker .dp_daypicker tr:not(:first-child):not(:nth-child(2)) td.dp_not_in_month {
+  visibility: hidden;
 }

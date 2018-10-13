@@ -77,10 +77,26 @@
   });
   $('.search-card .filter-header .dropdown-menu').on('click', '.dropdown-item, .btn', (e) => e.stopPropagation()); // stop click for filer / Search
   $('.search-card .filter-header .dropdown-menu').on('click', '.btn.btn-secondary', function(e) { // Clear filter dropdown checkbox / Search
-    $(this).parent().siblings('.dropdown-item').find('input[type="checkbox"]:checked').prop('checked',false);
-    e.stopPropagation()
+    $(this).parent().siblings('.dropdown-item').find('input[type="checkbox"]:checked').prop('checked', false);
+    e.stopPropagation();
   });
-  $('.dropdown-select.selected-value').on('click', '.dropdown-item', function(){ // Add dropdown html to button inner html / Booking
-    $(this).parents('.dropdown').find('.btn').html($(this).html());
+  $('.dropdown-select.selected-value').on('click', '.dropdown-item', function() { // Add dropdown html to button inner html / Booking
+    $(this).parents('.dropdown').find('.btn').html($(this).html()).parent().next('.form-group').children('input[type="hidden"]').val($.trim($(this).text()));
+  });
+
+  $('.dropdown-date').on('click', function() {
+    $('#datepicker1').Zebra_DatePicker({
+      always_visible: $($(this).find('.date-container')),
+      direction: true,
+      show_clear_date: false,
+      show_select_today: false,
+      first_day_of_week: 0,
+      show_other_months: false,
+      onSelect: function(value) {
+        console.log('value', value);
+      }
+    });
+  }).on('click', '.date-container', function(e) {
+    e.stopPropagation();
   });
 })();
