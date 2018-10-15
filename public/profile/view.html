@@ -108,6 +108,12 @@
 									<img src="/images/icons/edit.png" alt=""/>&nbsp;edit profile
 								</a>
 							</div>
+							<div class="more-actions flex-row" style="display: none">
+								<div style="margin-right: 8px;">
+									<img src="/images/icons/heart.png" height="40" width="40" alt=""/>
+								</div>
+								<button class="btn" type="button" data-toggle="modal" data-target="#bookModal">Book Session</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,6 +163,234 @@
 				<button class="button welcome btn-2">
 					Ok, got it!
 				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="bookModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form novalidate="novalidate">
+					<div class="modal-header">
+						<h5 class="modal-title">Book Conversation with:</h5>
+						<div class="flex-row modal-subtitle">
+							<img src="https://via.placeholder.com/50x50" alt=""/>
+							<div>
+								<h6>Adam Glassman</h6>
+								<h6>VP of Investments, Gas Trading</h6>
+								<h6>BUX</h6>
+							</div>
+						</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="flex-row">
+							<div>
+								<div class="dropdown dropdown-select selected-value">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Booking Type
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Phone Call
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Video Chat
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												Screen Share
+											</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">
+												<img src="/images/icons/screenshare.png" alt=""/>
+												In-Person
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="form-group">
+									<input type="hidden" class="form-control" data-validator-label="Booking" data-validator="required"/>
+									<div class="form-control-feedback" style="white-space:nowrap"></div>
+								</div>
+							</div>
+							<div>
+								<div class="dropdown dropdown-select selected-value">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Session Duration
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<li class="dropdown-item">
+											<label class="flex-row">15 minutes</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">30 minutes</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">45 minutes</label>
+										</li>
+										<li class="dropdown-item">
+											<label class="flex-row">60 minutes</label>
+										</li>
+									</ul>
+								</div>
+								<div class="form-group">
+									<input type="hidden" class="form-control" data-validator-label="Duration" data-validator="required"/>
+									<div class="form-control-feedback" style="white-space:nowrap"></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Reason for Booking</label>
+							<textarea class="form-control" placeholder="Enter reason for booking conversation." cols="8" data-validator-label="Reason" data-validator="required"></textarea>
+							<div class="form-control-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label>Request Up to 3 Booking Dates / Times</label>
+							<div class="dropdown dropdown-select dropdown-date selected-value">
+								<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Choose Date / Time
+								</button>
+								<input id="datepicker1" type="hidden" data-validator-label="Date 1" data-validator="required"/>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="date-container datepicker1_dropdown flex-row">
+										<div class="calendar"></div>
+										<div class="time">
+											<div class="title">All times are in EST.</div>
+											<ul class="time-container">
+												<li>9:00a</li>
+												<li>9:30a</li>
+												<li>10:00a</li>
+												<li>10:30a</li>
+												<li>11:00a</li>
+												<li>11:30a</li>
+												<li>12:00p</li>
+												<li>12:30p</li>
+												<li>1:00p</li>
+												<li>1:30p</li>
+												<li>2:00p</li>
+												<li>2:30p</li>
+												<li>3:00p</li>
+												<li>3:30p</li>
+												<li>4:00p</li>
+												<li>4:30p</li>
+												<li>5:00p</li>
+												<li>5:30p</li>
+												<li>6:00p</li>
+												<li>6:30p</li>
+												<li>7:00p</li>
+												<li>7:30p</li>
+												<li>8:00p</li>
+												<li>8:30p</li>
+												<li>9:00p</li>
+												<li>9:30p</li>
+												<li>10:00p</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="dropdown dropdown-select dropdown-date selected-value">
+								<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Choose Date / Time
+								</button>
+								<input id="datepicker2" type="hidden" data-validator-label="Date 2" data-validator="required"/>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="date-container datepicker2_dropdown flex-row">
+										<div class="calendar"></div>
+										<div class="time">
+											<div class="title">All times are in EST.</div>
+											<ul class="time-container">
+												<li>9:00a</li>
+												<li>9:30a</li>
+												<li>10:00a</li>
+												<li>10:30a</li>
+												<li>11:00a</li>
+												<li>11:30a</li>
+												<li>12:00p</li>
+												<li>12:30p</li>
+												<li>1:00p</li>
+												<li>1:30p</li>
+												<li>2:00p</li>
+												<li>2:30p</li>
+												<li>3:00p</li>
+												<li>3:30p</li>
+												<li>4:00p</li>
+												<li>4:30p</li>
+												<li>5:00p</li>
+												<li>5:30p</li>
+												<li>6:00p</li>
+												<li>6:30p</li>
+												<li>7:00p</li>
+												<li>7:30p</li>
+												<li>8:00p</li>
+												<li>8:30p</li>
+												<li>9:00p</li>
+												<li>9:30p</li>
+												<li>10:00p</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="dropdown dropdown-select dropdown-date selected-value">
+								<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Choose Date / Time
+								</button>
+								<input id="datepicker3" type="hidden" data-validator-label="Date 3" data-validator="required"/>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li class="date-container datepicker3_dropdown flex-row">
+										<div class="calendar"></div>
+										<div class="time">
+											<div class="title">All times are in EST.</div>
+											<ul class="time-container">
+												<li>9:00a</li>
+												<li>9:30a</li>
+												<li>10:00a</li>
+												<li>10:30a</li>
+												<li>11:00a</li>
+												<li>11:30a</li>
+												<li>12:00p</li>
+												<li>12:30p</li>
+												<li>1:00p</li>
+												<li>1:30p</li>
+												<li>2:00p</li>
+												<li>2:30p</li>
+												<li>3:00p</li>
+												<li>3:30p</li>
+												<li>4:00p</li>
+												<li>4:30p</li>
+												<li>5:00p</li>
+												<li>5:30p</li>
+												<li>6:00p</li>
+												<li>6:30p</li>
+												<li>7:00p</li>
+												<li>7:30p</li>
+												<li>8:00p</li>
+												<li>8:30p</li>
+												<li>9:00p</li>
+												<li>9:30p</li>
+												<li>10:00p</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn">Book Session</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
