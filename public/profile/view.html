@@ -33,18 +33,18 @@
 						<div class="right-header col col-sm-3 flex-column">
 							<div class="flex-row">
 								<div class="user" data-popover-content="#welcomePopover2">
-									<img src="/images/icons/users.png" class="members-icon"/>
+									<img src="/images/icons/members-icon.png" class="members-icon"/>
 								</div>
 								<div class="action-menu dropdown flex-row" data-popover-content="#welcomePopover1">
 									<img src="https://via.placeholder.com/30x30" alt=""/>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<a class="dropdown-item" href="/dashboard/upcoming.html"><img src="/images/icons/calendar.png"/>Upcoming<span class="notification">1</span></a>
-										<a class="dropdown-item" href="/dashboard/pending.html"><img src="/images/icons/hand.png"/>Pending<span class="notification">2</span></a>
-										<a class="dropdown-item" href="/dashboard/notifications.html"><img src="/images/icons/bell.png"/>Notifications<span class="notification">2</span></a>
-										<a class="dropdown-item" href="/profile/activity.html"><img src="/images/icons/clipboard.png"/>Activity</a>
-										<a class="dropdown-item" href="/profile/view.html"><img src="/images/icons/user.png"/>Your Profile</a>
-										<a class="dropdown-item" href=""><img src="/images/icons/cog.png"/>Account</a>
-										<a class="dropdown-item" href=""><img src="/images/icons/power.png"/>Log Out</a>
+										<a class="dropdown-item" href="/dashboard/upcoming.html"><img src="/images/icons/upcoming-icon.png"/>Upcoming<span class="notification">1</span></a>
+										<a class="dropdown-item" href="/dashboard/pending.html"><img src="/images/icons/pending-icon.png"/>Pending<span class="notification">2</span></a>
+										<a class="dropdown-item" href="/dashboard/notifications.html"><img src="/images/icons/notifications-icon.png"/>Notifications<span class="notification">2</span></a>
+										<a class="dropdown-item" href="/profile/activity.html"><img src="/images/icons/activity-icon.png"/>Activity</a>
+										<a class="dropdown-item" href="/profile/view.html"><img src="/images/icons/your-profile-icon.png"/>Your Profile</a>
+										<a class="dropdown-item" href=""><img src="/images/icons/account-icon.png"/>Account</a>
+										<a class="dropdown-item" href=""><img src="/images/icons/log-out-icon.png"/>Log Out</a>
 									</div>
 								</div>
 							</div>
@@ -100,8 +100,8 @@
 					<div class="profile-actions offset-sm-1 col-sm-3">
 						<div>
 							<div class="profile-images">
-								<img src="/images/default-user.png" class="profile-image" alt=""/>
-								<img src="/images/default-network.png" class="profile-network" alt=""/>
+								<img src="/images/profile-pic-placeholder.png" class="profile-image" alt=""/>
+								<img src="/images/company-pic-placeholder.png" class="profile-network" alt=""/>
 							</div>
 							<div class="edit-profile">
 								<a href="/profile/edit.html">
@@ -110,7 +110,7 @@
 							</div>
 							<div class="more-actions flex-row" style="display: none">
 								<div style="margin-right: 8px;">
-									<img src="/images/icons/heart.png" height="40" width="40" alt=""/>
+									<img src="/images/icons/big-heart-icon.png" alt=""/>
 								</div>
 								<button class="btn" type="button" data-toggle="modal" data-target="#bookModal">Book Session</button>
 							</div>
@@ -124,27 +124,27 @@
 				<h2>Access Your Dashboard</h2>
 				<div class="icon-row flex-row">
 					<div>
-						<img src="/images/icons/calendar.png" alt=""/>
+						<img src="/images/icons/upcoming-icon.png" alt=""/>
 						<div>upcoming converstaions</div>
 					</div>
 					<div>
-						<img src="/images/icons/hand.png" alt=""/>
+						<img src="/images/icons/pending-icon.png" alt=""/>
 						<div>conversation requests</div>
 					</div>
 					<div>
-						<img src="/images/icons/bell.png" alt=""/>
+						<img src="/images/icons/notifications-icon.png" alt=""/>
 						<div>notifcations</div>
 					</div>
 					<div>
-						<img src="/images/icons/clipboard.png" alt=""/>
+						<img src="/images/icons/activity-icon.png" alt=""/>
 						<div>activity</div>
 					</div>
 					<div>
-						<img src="/images/icons/user.png" alt=""/>
+						<img src="/images/icons/your-profile-icon.png" alt=""/>
 						<div>profile</div>
 					</div>
 					<div>
-						<img src="/images/icons/cog.png" alt=""/>
+						<img src="/images/icons/account-icon.png" alt=""/>
 						<div>Account</div>
 					</div>
 				</div>
@@ -156,8 +156,10 @@
 		<div id="welcomePopover2" class="hidden">
 			<div class="welcome-wrapper welcome-wrapper-2">
 				<h2>Access Your Networks</h2>
-				<div fxlayout="row" fxlayoutalign="start center">
-					<igm src="/images/icon/users.png" alt=""/>
+				<div class="flex-row">
+					<div>
+						<img src="/images/icons/members-icon.png" alt=""/>
+					</div>
 					<p>Discover and book members from all your social and professional networks!</p>
 				</div>
 				<button class="button welcome btn-2">
@@ -194,25 +196,25 @@
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 										<li class="dropdown-item">
 											<label class="flex-row">
-												<img src="/images/icons/screenshare.png" alt=""/>
+												<img src="/images/icons/phone-icon.png" alt=""/>
 												Phone Call
 											</label>
 										</li>
 										<li class="dropdown-item">
 											<label class="flex-row">
-												<img src="/images/icons/screenshare.png" alt=""/>
+												<img src="/images/icons/video-chat-icon.png" alt=""/>
 												Video Chat
 											</label>
 										</li>
 										<li class="dropdown-item">
 											<label class="flex-row">
-												<img src="/images/icons/screenshare.png" alt=""/>
+												<img src="/images/icons/screen-share.png" alt=""/>
 												Screen Share
 											</label>
 										</li>
 										<li class="dropdown-item">
 											<label class="flex-row">
-												<img src="/images/icons/screenshare.png" alt=""/>
+												<img src="/images/icons/in-person-icon.png" alt=""/>
 												In-Person
 											</label>
 										</li>
