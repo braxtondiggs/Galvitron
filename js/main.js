@@ -68,7 +68,6 @@
       }
     }
   });
-
   $('.pending nav').on('click', 'a', function(e) { //Pending Tabs / Dashboard Pending
     e.preventDefault()
     $(this).tab('show');
@@ -85,8 +84,8 @@
   });
 
   $('.dropdown-date').on('click', function() {
-    $('#datepicker1').Zebra_DatePicker({
-      always_visible: $($(this).find('.date-container')),
+    $(this).find('input').Zebra_DatePicker({
+      always_visible: $($(this).find(`.${$(this).find('input').prop('id')}_dropdown .calendar`)),
       direction: true,
       show_clear_date: false,
       show_select_today: false,
@@ -98,5 +97,8 @@
     });
   }).on('click', '.date-container', function(e) {
     e.stopPropagation();
+  }).on('click', '.time-container li', function(e) {
+    $(this).siblings().removeClass('active').end().addClass('active');
+    let time = $(this).text();
   });
 })();
