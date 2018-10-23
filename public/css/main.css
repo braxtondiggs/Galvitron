@@ -596,7 +596,7 @@ ul {
   display: inline-block;
   font-size: 16px;
   height: 28px;
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
   padding: 0 16px;
 }
 
@@ -1896,4 +1896,28 @@ ul {
   line-height: 24px;
   margin-right: 4px;
   margin-bottom: 4px;
+}
+/* ==========================================================================
+   Account
+   ========================================================================== */
+#confirmModal .modal-body,
+.accountbtn {
+  margin: 0 auto;
+}
+
+#confirmModal button {
+  width: 150px;
+}
+
+#confirmModal .modal-body .btncancel {
+  color: #57afca;
+  background: white;
+}
+/*BRADS GLOBAL CODE THAT NEEDS TO BE ADDED INTO MAIN*/
+.auth-form .form-group .tempmes {
+  display: block;
+}
+
+.nav-input {
+  text-indent: 20px;
 }
