@@ -182,6 +182,7 @@ ul {
   margin: 0 auto;
   max-width: 1100px;
   position: relative;
+  padding: 0 24px;
 }
 
 .basic-header-container .nav a {
@@ -330,7 +331,6 @@ ul {
    ========================================================================== */
 .auth {
   background-color: #dcf4fb;
-  height: 100%;
   min-height: 100%;
 }
 
@@ -339,7 +339,15 @@ ul {
 }
 
 .auth .form-container {
-  width: 465px;
+  max-width: 465px;
+  width: 100%;
+}
+
+.auth .intro-image {
+  height: 100%;
+  width: 100%;
+  max-width: 488px;
+  object-fit: contain;
 }
 
 .title {
@@ -393,7 +401,8 @@ ul {
   font-family: 'Circular Std Book';
   font-size: 15px;
   font-weight: 500;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 366px;
 }
 
 .more-actions p a {
@@ -434,6 +443,10 @@ ul {
   color: #fff;
 }
 
+.signup-container-intro .more-actions p {
+  max-width: initial;
+}
+
 .forgot-container {
   margin: 0 auto;
   max-width: 400px;
@@ -447,13 +460,20 @@ ul {
   margin-bottom: 32px;
 }
 
+.forgot-container .btn {
+  white-space: initial;
+  height: 100%;
+  min-height: 40px;
+}
+
 .form-successful {
   left: 50%;
   position: absolute;
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 433px;
+  max-width: 433px;
+  width: 100%;
 }
 
 .form-successful p.successful {
@@ -1912,6 +1932,11 @@ ul {
 #confirmModal .modal-body .btncancel {
   color: #57afca;
   background: white;
+}
+@media only screen and (max-device-width : 420px) {
+  .auth .container {
+    padding-top: 0;
+  }
 }
 /*BRADS GLOBAL CODE THAT NEEDS TO BE ADDED INTO MAIN*/
 .auth-form .form-group .tempmes {
