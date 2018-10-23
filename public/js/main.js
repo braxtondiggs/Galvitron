@@ -5,7 +5,9 @@
     $('[data-validator]').each(function() { //find inputs to validate
       new Validator($(this), {
         language: {
-          same: 'Passwords must match'
+          same: 'Passwords must match',
+          file_size : '{label} can\'t be larger than {param0}Mb',
+          skills: '{label} must have atleast {param0}'
         }
       });
     });
@@ -17,19 +19,26 @@
   });
   $(document).on('submit', 'form.search-form', (event) => { //Search Form submit / All Pages
     event.preventDefault();
-    window.location.replace('/search/index.html');
+    window.location.replace('../search/index.html');
   });
   $('.title-input').typeahead({ source: ['VP of Communications', 'VP of Investments', 'VP of Marketing', 'VP of Operations', 'VP of Sales'] }); //Fill type ahead / Profile Edit
   $('.company-input').typeahead({ source: ['Bücker Flugzeugbau', 'Buick', 'BUM Equipment', 'Bushwick Daily', 'Bushwick Kitchen', 'Buw Consulting', 'BUX'] }); //Fill type ahead / Profile Edit
   $('.skill-input').typeahead({ //Fill type ahead / Profile Edit
     source: ['investment banking', 'investment planning'],
+    autoSelect: false,
+  	selectOnBlur: false,
     afterSelect: function() { // after selecting a skill from dropdown, clear input and create a new chip / Profile Edit
-      $('.chips').append(`<li>${$(this.$element.get(0)).val()}<span class="delete">&times;</span></li>`);
+      const chips = $('.chips').text().split('×').map((el) => el.trim());
+      if (!chips.includes($(this.$element.get(0)).val())) {
+        $('.chips').append(`<li>${$(this.$element.get(0)).val()}<span class="delete">&times;</span></li>`);
+        $('#skills-input').val($('.chips').text());
+      }
       $(this.$element.get(0)).val('');
     }
   });
   $('.chips').on('click', 'li', function() { //remove profile skill chips / Profile Edit
     $(this).remove();
+    $('#skills-input').val($('.chips').text());
   });
   $('.user-image').on('click', () => $('input[type="file"]').trigger('click')); //fake clicks input for file upload / Profile Edit
   $('#welcomeModal').modal('show'); //show welcome modal / Profile Edit
@@ -61,6 +70,7 @@
         const reader = new FileReader();
         reader.onload = (readerEvt) => {
           const userImage = `data:${file.type};base64,${btoa(readerEvt.target.result)}`; // Final Base64 ouput
+          $('img.user').prop('src', userImage).siblings('.helper-text').hide();
         };
         reader.readAsBinaryString(file);
       } catch {
@@ -101,4 +111,11 @@
     $(this).siblings().removeClass('active').end().addClass('active');
     let time = $(this).text();
   });
+
+  Validator.prototype.file_size = function (fileSize) {
+    return $('#profile-image-upload').get(0).files[0].size/1024/1024 <= fileSize;
+  };
+  Validator.prototype.skills = function (skillsSize) {
+    return $('.chips li').length >= skillsSize;
+  };
 })();

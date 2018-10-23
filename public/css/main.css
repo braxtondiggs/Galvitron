@@ -66,7 +66,7 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right, #fbfeff, #fbfefe, #fcfffd);
+  background-color: #fbfdff;
   color: #464646;
   font-family: 'Circular Std';
   height: 100%;
@@ -288,13 +288,11 @@ ul {
   height: 24px;
   margin: -2px 8px 0;
 }
-
-.card .card-header .dropdown:hover > .dropdown-menu,
+/*.card .card-header .dropdown:hover > .dropdown-menu,
 .header-container .right-header .dropdown:hover > .dropdown-menu {
   cursor: pointer;
   display: block;
-}
-
+}*/
 .header-container .right-header .dropdown.dropdown-toggle::after {
   align-self: center;
 }
@@ -514,7 +512,8 @@ ul {
   color: #646464;
   font-size: 16px;
   height: 36px;
-  padding-left: 16px;
+  margin: 0 16px 24px;
+  height: 100%;
   width: 100%;
 }
 
@@ -569,7 +568,7 @@ ul {
   display: block;
   margin: 0 auto;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
 }
 
 .profile .user-image .network {
@@ -605,6 +604,10 @@ ul {
   width: 100%;
 }
 
+.profile-actions .form-control-feedback {
+  margin-bottom: 16px;
+}
+
 .profile-form .chips {
   margin-top: 16px;
 }
@@ -628,6 +631,10 @@ ul {
   color: #b4b4b4;
   float: right;
   margin-left: 8px;
+}
+
+#welcomeModal .modal-dialog {
+  width: calc(100vw - 1rem);
 }
 
 #welcomeModal .modal-content {
@@ -678,33 +685,32 @@ ul {
 }
 
 .profile-view .name {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 900;
-  margin: 0 0 23px;
+  margin: 0 0 16px;
 }
 
 .profile-view .company,
 .profile-view .network {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 28px;
   margin: 0 0 20px;
 }
 
 .profile-view .company {
-  font-size: 26px;
   margin: 0;
 }
 
 .profile-view .information {
   font-family: 'Circular Std Book';
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 20px;
   margin: 0 0 28px;
 }
 
 .profile-view .expertise .expertise-title {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 0 19px;
 }
@@ -715,17 +721,18 @@ ul {
 
 .profile-view .expertise ul li {
   border: solid 1px #464646;
+  font-family: 'Circular Std Book';
   color: #464646;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14.5px;
   margin-right: 6px;
   margin-top: 12px;
-  padding: 7px 22px;
+  padding: 1px 13px;
   text-align: center;
 }
 
 .profile-view .network .network-title {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 0 19px;
 }
@@ -748,9 +755,9 @@ ul {
 
 .profile-view .network ul h5.title {
   color: #464646;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 20px;
   margin: 0;
   text-align: left;
 }
@@ -758,8 +765,8 @@ ul {
 .profile-view .network ul p {
   color: #646464;
   font-family: 'Circular Std Book';
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -775,9 +782,8 @@ ul {
 .profile-view .profile-actions .profile-images .profile-image {
   border-radius: 50%;
   display: block;
-  height: 280px;
   object-fit: cover;
-  width: 280px;
+  max-width: 100%;
   z-index: 0;
 }
 
@@ -843,6 +849,10 @@ ul {
   margin: 0 0 18px;
 }
 
+.welcome-wrapper .icon-row {
+  flex-wrap: wrap;
+}
+
 .welcome-wrapper .icon-row > div {
   flex: 1 1 0;
   margin-right: 4px;
@@ -875,7 +885,7 @@ ul {
 .welcome-wrapper-2 {
   height: 136px;
   margin-right: -20px;
-  width: 300px;
+  max-width: 300px;
 }
 
 .welcome-wrapper-2 img {
@@ -915,8 +925,9 @@ ul {
 .dashboard .profile-information img {
   border-radius: 50%;
   height: 138px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
   width: 138px;
+  display: block;
 }
 
 .dashboard .profile-information .navigation h3 {
@@ -1574,6 +1585,7 @@ ul {
 .search-card .user-info,
 .search-card .user-list {
   max-height: 587px;
+  height: 100%;
   overflow-x: visible;
   overflow-y: hidden;
 }
@@ -1933,9 +1945,66 @@ ul {
   color: #57afca;
   background: white;
 }
-@media only screen and (max-device-width : 420px) {
+@media only screen and (max-width : 768px) {
   .auth .container {
     padding-top: 0;
+  }
+
+  .dashboard .container,
+  .profile-view .container {
+    padding-top: 16px;
+  }
+
+  .dashboard .profile-information > div {
+    position: relative;
+    max-width: initial;
+  }
+
+  .profile-view .profile-actions > div {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  .popover {
+    max-width: 97%;
+  }
+
+  .header-container .container {
+    padding: 0 16px;
+  }
+
+  .pending .card-container > .flex-row,
+  .upcoming .card-container > .flex-row,
+  .your-pending > .flex-row {
+    flex-wrap: wrap;
+  }
+
+  .pending .extended-card,
+  .your-pending .extended-card {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  .pending .pending-container,
+  .your-pending .pending-container {
+    flex: 0 0 100%;
+    max-width: initial;
+    border-left: 1px solid #d2d2d2;
+    border-top: 0;
+    max-width: 487px;
+  }
+
+  .pending .nav {
+    justify-content: center;
+  }
+
+  .pending .nav-pills .nav-link {
+    font-size: 13px;
+  }
+
+  .upcoming .card {
+    flex: 0 0 100%;
+    margin-top: 16px;
   }
 }
 /*BRADS GLOBAL CODE THAT NEEDS TO BE ADDED INTO MAIN*/
