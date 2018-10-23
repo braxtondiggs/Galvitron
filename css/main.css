@@ -288,13 +288,11 @@ ul {
   height: 24px;
   margin: -2px 8px 0;
 }
-
-.card .card-header .dropdown:hover > .dropdown-menu,
+/*.card .card-header .dropdown:hover > .dropdown-menu,
 .header-container .right-header .dropdown:hover > .dropdown-menu {
   cursor: pointer;
   display: block;
-}
-
+}*/
 .header-container .right-header .dropdown.dropdown-toggle::after {
   align-self: center;
 }
@@ -514,7 +512,8 @@ ul {
   color: #646464;
   font-size: 16px;
   height: 36px;
-  padding-left: 16px;
+  margin: 0 16px 24px;
+  height: 100%;
   width: 100%;
 }
 
@@ -628,6 +627,10 @@ ul {
   color: #b4b4b4;
   float: right;
   margin-left: 8px;
+}
+
+#welcomeModal .modal-dialog {
+  width: calc(100vw - 1rem);
 }
 
 #welcomeModal .modal-content {
@@ -1574,6 +1577,7 @@ ul {
 .search-card .user-info,
 .search-card .user-list {
   max-height: 587px;
+  height: 100%;
   overflow-x: visible;
   overflow-y: hidden;
 }

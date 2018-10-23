@@ -61,6 +61,7 @@
         const reader = new FileReader();
         reader.onload = (readerEvt) => {
           const userImage = `data:${file.type};base64,${btoa(readerEvt.target.result)}`; // Final Base64 ouput
+          $('img.user').prop('src', userImage).siblings('.helper-text').hide();
         };
         reader.readAsBinaryString(file);
       } catch {
