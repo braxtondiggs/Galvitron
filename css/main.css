@@ -66,7 +66,7 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right, #fbfeff, #fbfefe, #fcfffd);
+  background-color: #fbfdff;
   color: #464646;
   font-family: 'Circular Std';
   height: 100%;
@@ -685,33 +685,32 @@ ul {
 }
 
 .profile-view .name {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 900;
-  margin: 0 0 23px;
+  margin: 0 0 16px;
 }
 
 .profile-view .company,
 .profile-view .network {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 28px;
   margin: 0 0 20px;
 }
 
 .profile-view .company {
-  font-size: 26px;
   margin: 0;
 }
 
 .profile-view .information {
   font-family: 'Circular Std Book';
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 20px;
   margin: 0 0 28px;
 }
 
 .profile-view .expertise .expertise-title {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 0 19px;
 }
@@ -722,17 +721,18 @@ ul {
 
 .profile-view .expertise ul li {
   border: solid 1px #464646;
+  font-family: 'Circular Std Book';
   color: #464646;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14.5px;
   margin-right: 6px;
   margin-top: 12px;
-  padding: 7px 22px;
+  padding: 1px 13px;
   text-align: center;
 }
 
 .profile-view .network .network-title {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 0 19px;
 }
@@ -755,9 +755,9 @@ ul {
 
 .profile-view .network ul h5.title {
   color: #464646;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 20px;
   margin: 0;
   text-align: left;
 }
@@ -765,8 +765,8 @@ ul {
 .profile-view .network ul p {
   color: #646464;
   font-family: 'Circular Std Book';
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
 }
 

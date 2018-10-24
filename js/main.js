@@ -28,7 +28,7 @@
     autoSelect: false,
   	selectOnBlur: false,
     afterSelect: function() { // after selecting a skill from dropdown, clear input and create a new chip / Profile Edit
-      const chips = $('.chips').text().split('×');
+      const chips = $('.chips').text().split('×').map((el) => el.trim());
       if (!chips.includes($(this.$element.get(0)).val())) {
         $('.chips').append(`<li>${$(this.$element.get(0)).val()}<span class="delete">&times;</span></li>`);
         $('#skills-input').val($('.chips').text());
