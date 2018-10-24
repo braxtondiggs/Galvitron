@@ -17,10 +17,10 @@
 			<div class="header-container">
 				<div class="container">
 					<div class="row">
-						<div class="col col-sm-3 flex-column">
+						<div class="col-6 col-sm-3 flex-column">
 							<a href="/" class="logo">Cerebro</a>
 						</div>
-						<div class="search col col-sm-6 flex-column">
+						<div class="search col-6 flex-column d-none d-sm-flex flex-column">
 							<div class="flex-row">
 								<img src="/images/icons/search.png" class="search-icon"/>
 								<form class="search-form" novalidate="novalidate">
@@ -30,7 +30,7 @@
 								<img src="/images/icons/grid.png" class="category-icon"/>
 							</div>
 						</div>
-						<div class="right-header col col-sm-3 flex-column">
+						<div class="right-header col-6 col-sm-3 flex-column">
 							<div class="flex-row">
 								<div class="user" data-popover-content="#welcomePopover2">
 									<img src="/images/icons/members-icon.png" class="members-icon"/>
@@ -97,11 +97,13 @@
 									<label class="col-sm-3 col-form-label">Skills&nbsp;<span>*</span></label>
 									<div class="col-sm-9">
 										<input type="text" class="typeahead form-control skill-input" placeholder="For ex, “data management” or “web development”" data-provide="typeahead" autocomplete="off"/>
+										<input type="hidden" id="skills-input" class="form-control" data-validator-label="Skills" data-validator="required|skills:5"/>
+										<div class="form-control-feedback"></div>
 										<ul class="chips"></ul>
 									</div>
 								</div>
 							</div>
-							<div class="profile-actions col-sm-12 col-md-4 col-lg-3 offset-md-1">
+							<div class="profile-actions col-sm-12 col-md-4 col-lg-3 offset-md-1 form-group">
 								<div class="user-image">
 									<img src="/images/profile-pic-placeholder.png" class="user" alt=""/>
 									<img src="/images/company-pic-placeholder.png" class="network" alt=""/>
@@ -110,7 +112,8 @@
 										<span>Add Photo</span>
 									</div>
 								</div>
-								<input id="profile-image-upload" class="hidden" type="file" accept="image/png"/>
+								<input id="profile-image-upload" class="hidden form-control" type="file" data-validator-label="Photo" data-validator="file_size:5" accept="image/png"/>
+								<div class="form-control-feedback"></div>
 								<button type="submit" class="btn">
 									<span>Create Profile</span>
 								</button>

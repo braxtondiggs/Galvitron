@@ -568,7 +568,7 @@ ul {
   display: block;
   margin: 0 auto;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
 }
 
 .profile .user-image .network {
@@ -602,6 +602,10 @@ ul {
 .profile-actions .btn {
   min-width: initial;
   width: 100%;
+}
+
+.profile-actions .form-control-feedback {
+  margin-bottom: 16px;
 }
 
 .profile-form .chips {
@@ -778,9 +782,8 @@ ul {
 .profile-view .profile-actions .profile-images .profile-image {
   border-radius: 50%;
   display: block;
-  height: 280px;
   object-fit: cover;
-  width: 280px;
+  max-width: 100%;
   z-index: 0;
 }
 
@@ -846,6 +849,10 @@ ul {
   margin: 0 0 18px;
 }
 
+.welcome-wrapper .icon-row {
+  flex-wrap: wrap;
+}
+
 .welcome-wrapper .icon-row > div {
   flex: 1 1 0;
   margin-right: 4px;
@@ -878,7 +885,7 @@ ul {
 .welcome-wrapper-2 {
   height: 136px;
   margin-right: -20px;
-  width: 300px;
+  max-width: 300px;
 }
 
 .welcome-wrapper-2 img {
@@ -918,8 +925,9 @@ ul {
 .dashboard .profile-information img {
   border-radius: 50%;
   height: 138px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
   width: 138px;
+  display: block;
 }
 
 .dashboard .profile-information .navigation h3 {
@@ -1940,6 +1948,58 @@ ul {
 @media only screen and (max-device-width : 420px) {
   .auth .container {
     padding-top: 0;
+  }
+
+  .dashboard .container,
+  .profile-view .container {
+    padding-top: 16px;
+  }
+
+  .dashboard .profile-information > div {
+    position: relative;
+    max-width: initial;
+  }
+
+  .profile-view .profile-actions > div {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  .popover {
+    max-width: 97%;
+  }
+
+  .header-container .container {
+    padding: 0 16px;
+  }
+
+  .pending .card-container > .flex-row,
+  .upcoming .card-container > .flex-row,
+  .your-pending > .flex-row {
+    flex-wrap: wrap;
+  }
+
+  .pending .extended-card,
+  .your-pending .extended-card {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  .pending .pending-container,
+  .your-pending .pending-container {
+    flex: 0 0 100%;
+    max-width: initial;
+    border-left: 1px solid #d2d2d2;
+    border-top: 0;
+  }
+
+  .pending .nav-pills .nav-link {
+    font-size: 13px;
+  }
+
+  .upcoming .card {
+    flex: 0 0 100%;
+    margin-top: 16px;
   }
 }
 /*BRADS GLOBAL CODE THAT NEEDS TO BE ADDED INTO MAIN*/
