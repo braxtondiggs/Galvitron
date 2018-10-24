@@ -19,7 +19,7 @@
   });
   $(document).on('submit', 'form.search-form', (event) => { //Search Form submit / All Pages
     event.preventDefault();
-    window.location.replace('/search/index.html');
+    window.location.replace('../search/index.html');
   });
   $('.title-input').typeahead({ source: ['VP of Communications', 'VP of Investments', 'VP of Marketing', 'VP of Operations', 'VP of Sales'] }); //Fill type ahead / Profile Edit
   $('.company-input').typeahead({ source: ['Bücker Flugzeugbau', 'Buick', 'BUM Equipment', 'Bushwick Daily', 'Bushwick Kitchen', 'Buw Consulting', 'BUX'] }); //Fill type ahead / Profile Edit
