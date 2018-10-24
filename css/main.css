@@ -1945,7 +1945,7 @@ ul {
   color: #57afca;
   background: white;
 }
-@media only screen and (max-device-width : 420px) {
+@media only screen and (max-width : 768px) {
   .auth .container {
     padding-top: 0;
   }
@@ -1991,6 +1991,11 @@ ul {
     max-width: initial;
     border-left: 1px solid #d2d2d2;
     border-top: 0;
+    max-width: 487px;
+  }
+
+  .pending .nav {
+    justify-content: center;
   }
 
   .pending .nav-pills .nav-link {
