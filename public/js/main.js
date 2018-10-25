@@ -36,11 +36,12 @@
       $(this.$element.get(0)).val('');
     }
   });
+  $('#skills-input').val($('.chips').text());
   $('.chips').on('click', 'li', function() { //remove profile skill chips / Profile Edit
     $(this).remove();
     $('#skills-input').val($('.chips').text());
   });
-  $('.user-image').on('click', () => $('input[type="file"]').trigger('click')); //fake clicks input for file upload / Profile Edit
+  $('.profile-actions .user-image').on('click', () => $('input[type="file"]').trigger('click')); //fake clicks input for file upload / Profile Edit
   $('#welcomeModal').modal('show'); //show welcome modal / Profile Edit
   $(document).on('click', 'button.welcome.btn-1', function() { //open 1st & hide 2st welcome popover / Profile View
     $('.profile-view .action-menu').popover('hide');
@@ -70,7 +71,7 @@
         const reader = new FileReader();
         reader.onload = (readerEvt) => {
           const userImage = `data:${file.type};base64,${btoa(readerEvt.target.result)}`; // Final Base64 ouput
-          $('img.user').prop('src', userImage).siblings('.helper-text').hide();
+          $('.profile-actions img.user').prop('src', userImage).siblings('.helper-text').hide();
         };
         reader.readAsBinaryString(file);
       } catch {

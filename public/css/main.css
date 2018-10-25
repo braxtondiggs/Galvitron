@@ -180,9 +180,8 @@ ul {
   height: 48px;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1100px;
   position: relative;
-  padding: 0 24px;
+  padding: 0 48px;
 }
 
 .basic-header-container .nav a {
@@ -256,12 +255,12 @@ ul {
 }
 
 .header-container .right-header .members-icon {
-  height: 24px;
+  height: 20px;
   margin-right: 28px;
-  width: 29px;
+  width: 25px;
 }
 
-.header-container .right-header .action-menu::after {
+.header-container .right-header .action-menu a[data-toggle="dropdown"]::after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #646464;
@@ -276,7 +275,7 @@ ul {
   width: 0;
 }
 
-.header-container .right-header .action-menu > img {
+.header-container .right-header .action-menu img.user-image {
   border-radius: 50%;
   height: 30px;
   margin-right: 8px;
@@ -285,7 +284,7 @@ ul {
 }
 
 .header-container .right-header .action-menu .dropdown-item img {
-  height: 24px;
+  height: 18px;
   margin: -2px 8px 0;
 }
 /*.card .card-header .dropdown:hover > .dropdown-menu,
@@ -512,7 +511,7 @@ ul {
   color: #646464;
   font-size: 16px;
   height: 36px;
-  margin: 0 16px 24px;
+  margin: 0 8px 24px;
   height: 100%;
   width: 100%;
 }
@@ -533,6 +532,22 @@ ul {
   font-size: 22px;
   font-weight: bold;
   margin: 0.83em 0 40px;
+}
+
+.profile-form .profile-actions {
+  padding: 0;
+}
+
+.profile-form .profile-actions .btn {
+  font-size: 22px;
+}
+
+.profile-form .profile-actions .row > .col-6:first-child {
+  padding: 0 8px 0 0;
+}
+
+.profile-form .profile-actions .row > .col-6:last-child {
+  padding: 0 0 0 8px;
 }
 
 .profile-edit > div {
@@ -556,14 +571,14 @@ ul {
   right: 12px;
 }
 
-.profile .user-image {
+.profile .profile-actions .user-image {
   cursor: pointer;
   margin: 40px 0;
   position: relative;
   text-align: center;
 }
 
-.profile .user-image .user {
+.profile .profile-actions .user-image .user {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
@@ -571,7 +586,7 @@ ul {
   max-width: 100%;
 }
 
-.profile .user-image .network {
+.profile .profile-actions .user-image .network {
   bottom: 0;
   height: 70px;
   position: absolute;
@@ -593,7 +608,7 @@ ul {
   width: 18px;
 }
 
-.profile .user-image .helper-text span {
+.profile .profile-actions .user-image .helper-text span {
   color: #646464;
   font-size: 16px;
   font-weight: 500;
@@ -631,6 +646,10 @@ ul {
   color: #b4b4b4;
   float: right;
   margin-left: 8px;
+}
+
+#welcomeModal {
+  height: 380px;
 }
 
 #welcomeModal .modal-dialog {
@@ -772,6 +791,8 @@ ul {
 
 .profile-view .profile-actions > div {
   position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .profile-view .profile-actions .profile-images {
@@ -952,6 +973,7 @@ ul {
   line-height: 16px;
   text-transform: capitalize;
   transition: color 0.3s ease-in-out;
+  max-width: 130px;
 }
 
 .dashboard .profile-information .navigation li a .badge {
@@ -1472,6 +1494,10 @@ ul {
 
 .search-card .dropdown {
   display: inline-block;
+}
+
+.search-card .filter-header .dropdown:first-child {
+  margin-right: 8px;
 }
 
 .dropdown-select .btn {
@@ -2005,6 +2031,16 @@ ul {
   .upcoming .card {
     flex: 0 0 100%;
     margin-top: 16px;
+  }
+
+  .dashboard .profile-information .navigation {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-height : 625px) {
+  .profile-view .profile-actions > div {
+    top: initial;
+    transform: initial;
   }
 }
 /*BRADS GLOBAL CODE THAT NEEDS TO BE ADDED INTO MAIN*/

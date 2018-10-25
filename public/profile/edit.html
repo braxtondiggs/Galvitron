@@ -18,7 +18,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-6 col-sm-3 flex-column">
-							<a href="../" class=" logo" ="logo" ">Cerebro</a>
+							<a href="../" class="logo">Cerebro</a>
 						</div>
 						<div class="search col-6 flex-column d-none d-sm-flex flex-column">
 							<div class="flex-row">
@@ -32,16 +32,18 @@
 						</div>
 						<div class="right-header col-6 col-sm-3 flex-column">
 							<div class="flex-row">
-								<div class="user" data-popover-content="#welcomePopover2">
+								<a href="../search/" class="user" data-popover-content="#welcomePopover2">
 									<img src="../images/icons/members-icon.png" class="members-icon"/>
-								</div>
-								<div class="action-menu dropdown flex-row" data-popover-content="#welcomePopover1" data-toggle="dropdown">
-									<img src="https://via.placeholder.com/30x30" alt=""/>
+								</a>
+								<div class="action-menu dropdown flex-row" data-popover-content="#welcomePopover1">
+									<a href="#" data-toggle="dropdown">
+										<img src="https://via.placeholder.com/30x30" class="user-image" alt=""/>
+									</a>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 										<a class="dropdown-item" href="../dashboard/upcoming.html"><img src="../images/icons/upcoming-icon.png"/>Upcoming<span class="notification">1</span></a>
 										<a class="dropdown-item" href="../dashboard/pending.html"><img src="../images/icons/pending-icon.png"/>Pending<span class="notification">2</span></a>
 										<a class="dropdown-item" href="../dashboard/notifications.html"><img src="../images/icons/notifications-icon.png"/>Notifications<span class="notification">2</span></a>
-										<a class="dropdown-item" href="../profile/activity.html"><img src="../images/icons/your-profile-icon.png"/>Activity</a>
+										<a class="dropdown-item" href="../profile/activity.html"><img src="../images/icons/activity-icon.png"/>Activity</a>
 										<a class="dropdown-item" href="../profile/view.html"><img src="../images/icons/your-profile-icon.png"/>Your Profile</a>
 										<a class="dropdown-item" href=""><img src="../images/icons/account-icon.png"/>Account</a>
 										<a class="dropdown-item" href=""><img src="../images/icons/log-out-icon.png"/>Log Out</a>
@@ -103,7 +105,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="profile-actions col-sm-12 col-md-4 col-lg-3 offset-md-1 form-group">
+							<div class="profile-actions col-sm-12 col-md-4 offset-md-1 form-group">
 								<div class="user-image">
 									<img src="../images/profile-pic-placeholder.png" class="user" alt=""/>
 									<img src="../images/company-pic-placeholder.png" class="network" alt=""/>
@@ -118,12 +120,12 @@
 									<span>Create Profile</span>
 								</button>
 								<div class="row hidden">
-									<div class="col">
+									<div class="col-6">
 										<button type="button" class="btn btn-secondary">
 											<span>Cancel</span>
 										</button>
 									</div>
-									<div class="col">
+									<div class="col-6">
 										<button type="submit" class="btn">
 											<span>Save</span>
 										</button>
