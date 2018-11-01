@@ -111,6 +111,14 @@
   }).on('click', '.time-container li', function(e) {
     $(this).siblings().removeClass('active').end().addClass('active');
     let time = $(this).text();
+  }).on('click', '.time-container li, .dp_daypicker td', function() {
+    const dropdown = $(this).parents('.dropdown-select');
+    const time = dropdown.find('.time-container li.active');
+    const date = dropdown.find('.dp_daypicker td.dp_selected');
+    if (date.length && time.length) {
+      const dateValue = dropdown.children('input[type="hidden"]').val().replace(/(\d{4})\-(\d{2})\-(\d{2}).*/, '$2/$3/$1');
+      dropdown.children('.dropdown-toggle').dropdown('toggle').text(`${dateValue} ${$(time).text()}`);
+    }
   });
 
   Validator.prototype.file_size = function (fileSize) {
