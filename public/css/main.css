@@ -146,8 +146,11 @@ ul {
   font-size: 13px;
   font-weight: 500;
   height: 18px;
-  line-height: 18px;
+  line-height: 17px;
+  overflow: hidden;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 18px;
 }
 
