@@ -95,6 +95,7 @@
   });
 
   $('.dropdown-date').on('click', function() {
+    updateAvailableTimes($(this).find('.time-container li'));
     $(this).find('input').Zebra_DatePicker({
       always_visible: $($(this).find(`.${$(this).find('input').prop('id')}_dropdown .calendar`)),
       direction: true,
@@ -104,6 +105,7 @@
       show_other_months: false,
       onSelect: function(value) {
         console.log('value', value);
+        updateAvailableTimes($(this).parents('.dropdown-select').find('.time-container li'), value.replace(/(\d{4})\-(\d{2})\-(\d{2}).*/, '$1/$2/$3'));
       }
     });
   }).on('click', '.date-container', function(e) {
@@ -120,6 +122,18 @@
       dropdown.children('.dropdown-toggle').dropdown('toggle').text(`${dateValue} ${$(time).text()}`);
     }
   });
+
+  function updateAvailableTimes(timeRef, date = new Date().toJSON().slice(0, 10).replace(/-/g, '/')) {
+    $.each(timeRef, function(i, elem) {
+      $(elem).show();
+      if (Date.parse(`${date} ${convertTime($(elem).text())}`) < new Date()) $(elem).hide();
+    });
+  }
+
+  function convertTime(t) {
+    const split_time = t.split(':');
+    return t.indexOf('p') > -1 && parseInt(split_time[0]) !== 12 ? `${(parseInt(split_time[0]) + 12).toString()}:${split_time[1].slice(0, -1)}` : t.slice(0, -1);
+  }
 
   Validator.prototype.file_size = function (fileSize) {
     return $('#profile-image-upload').get(0).files[0].size/1024/1024 <= fileSize;
