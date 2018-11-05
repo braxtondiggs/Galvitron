@@ -1540,7 +1540,8 @@ ul {
   font-family: 'Circular Std Book';
   font-size: 14px;
   line-height: 44px;
-  text-align: center;
+  padding: 0 17px;
+  text-align: left;
 }
 
 .search-card .member-list > div {
@@ -1565,6 +1566,7 @@ ul {
 .search-card .member-image img {
   border-radius: 50%;
   height: 76px;
+  object-fit: cover;
   width: 76px;
 }
 
