@@ -1873,6 +1873,10 @@ ul {
   width: 20px;
 }
 
+.modal-open .modal {
+  overflow-y: hidden;
+}
+
 .dropdown-date .dropdown-menu {
   padding: 0;
 }
