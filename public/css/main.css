@@ -1764,6 +1764,9 @@ ul {
 
 #bookModal .modal-body .flex-row > div {
   flex: 1;
+}
+
+#bookModal .modal-body .flex-row > div:first-child {
   margin-right: 16px;
 }
 
@@ -1813,6 +1816,14 @@ ul {
   padding: 0 14px;
   text-align: left;
   width: 100%;
+}
+
+#bookModal .dropdown-date .btn {
+  border-bottom-width: 0;
+}
+
+#bookModal .dropdown-date:last-child .btn {
+  border-bottom-width: 1px;
 }
 
 #bookModal .dropdown .btn label {
