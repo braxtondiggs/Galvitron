@@ -135,6 +135,19 @@
     return t.indexOf('p') > -1 && parseInt(split_time[0]) !== 12 ? `${(parseInt(split_time[0]) + 12).toString()}:${split_time[1].slice(0, -1)}` : t.slice(0, -1);
   }
 
+  $('.readmore').each(function() {
+    const content = $(this).text();
+    const charLimit = 300;
+    if(content.length > charLimit) {
+      var c = content.substr(0, charLimit);
+      var h = content.substr(charLimit, content.length - charLimit);
+      $(this).html(`${c}<span class="hidden">${h}</span> <b class="action more">read more…</b></span>`);
+    }
+  }).on('click', '.action', function() {
+    $(this).hasClass('more') ? $(this).toggleClass('more less').text('read less') : $(this).toggleClass('less more').text('read more…');
+    $(this).prev().toggle();
+  });
+
   Validator.prototype.file_size = function (fileSize) {
     return $('#profile-image-upload').get(0).files[0].size/1024/1024 <= fileSize;
   };

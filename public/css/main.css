@@ -1748,6 +1748,13 @@ ul {
 .scrollable {
   overflow-y: scroll;
 }
+
+.readmore .action {
+  font-family: 'Circular Std';
+  cursor: pointer;
+  font-weight: 500;
+  color: #1e1e1e;
+}
 /* ==========================================================================
    Book Modal
    ========================================================================== */
