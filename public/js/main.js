@@ -67,16 +67,12 @@
   $('.profile-actions').on('change', '#profile-image-upload', function(event) { // Profile Image Upload / Profile Edit
     const file = event.target.files[0];
     if (file) {
-      try {
-        const reader = new FileReader();
-        reader.onload = (readerEvt) => {
-          const userImage = `data:${file.type};base64,${btoa(readerEvt.target.result)}`; // Final Base64 ouput
-          $('.profile-actions img.user').prop('src', userImage).siblings('.helper-text').hide();
-        };
-        reader.readAsBinaryString(file);
-      } catch {
-        alert('Something went wrong, please try a diffrent image');
-      }
+      const reader = new FileReader();
+      reader.onload = (readerEvt) => {
+        const userImage = `data:${file.type};base64,${btoa(readerEvt.target.result)}`; // Final Base64 ouput
+        $('.profile-actions img.user').prop('src', userImage).siblings('.helper-text').hide();
+      };
+      reader.readAsBinaryString(file);
     }
   });
   $('.pending nav').on('click', 'a', function(e) { //Pending Tabs / Dashboard Pending
