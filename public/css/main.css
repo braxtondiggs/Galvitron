@@ -1376,6 +1376,7 @@ ul {
 
 .your-pending .pending-container ul {
   flex: 1 1 0;
+  margin-bottom: 24px;
 }
 
 .your-pending .pending-container ul li {
