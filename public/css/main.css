@@ -881,6 +881,7 @@ ul {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  text-align: left;
 }
 
 .profile-view .profile-actions > div {
@@ -1166,6 +1167,7 @@ ul {
 
 .card-content {
   padding: 18px 30px 20px 23px;
+  justify-content: space-between;
 }
 
 .card-content .user-image img {
@@ -1330,6 +1332,10 @@ ul {
   font-size: 13px;
   font-style: italic;
   margin: 16px 0;
+}
+
+.pending .card-content .content-area {
+  flex: 1;
 }
 
 .pending .card-content .content-area,
@@ -2165,8 +2171,8 @@ ul {
   }
 
   .profile-view .profile-actions > div {
-    position: relative;
-    margin-bottom: 32px;
+    position: initial;
+    transform: initial;
   }
 
   .popover {
@@ -2213,6 +2219,120 @@ ul {
 
   .dashboard .profile-information .navigation {
     margin-bottom: 40px;
+  }
+
+  .profile-view .profile-actions {
+    order: -1;
+  }
+
+  .profile-view .profile-actions .profile-images {
+    margin: 0 auto;
+    height: 129px;
+    width: 129px;
+  }
+
+  .profile-view .profile-actions .profile-images .profile-network {
+    height: 33px;
+    width: 33px;
+    border-width: 1px;
+  }
+
+  .profile-view .profile-actions .profile-images {
+    margin-bottom: 17px;
+  }
+
+  .profile-actions .edit-profile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #fff;
+    border-top: solid 1px #d2d2d2;
+    padding: 12px 0;
+  }
+
+  .profile-actions .edit-profile a {
+    font-size: 16px;
+  }
+
+  .profile-actions .more-actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #fff;
+    border-top: solid 1px #d2d2d2;
+    padding: 10px 0;
+  }
+
+  .profile-actions .more-actions img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .profile-actions .more-actions .btn {
+    font-size: 16px;
+    height: 30px;
+    width: 132px;
+  }
+
+  .profile-view .name {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .profile-view .company,
+  .profile-view .network {
+    text-align: center;
+    font-size: 12.5px;
+    line-height: 18px;
+  }
+
+  .profile-view .information {
+    line-height: 18px;
+    font-size: 12.5px;
+  }
+
+  .profile-view .profile-information {
+    padding: 0 23px 25px;
+  }
+
+  .profile-view .expertise .expertise-title,
+  .profile-view .network .network-title {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .profile-view .expertise ul {
+    margin-bottom: 24px;
+  }
+
+  .profile-view .expertise ul li {
+    font-size: 12.5px;
+    font-family: 'Circular Std';
+    margin-top: 6px;
+  }
+
+  .profile-view .network ul img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .profile-view .network ul li {
+    margin-bottom: 15px;
+  }
+
+  .profile-view .network ul h5.title {
+    font-size: 12.5px;
+    line-height: normal;
+  }
+
+  .profile-view .network ul p {
+    font-size: 12px;
+    line-height: normal;
   }
 }
 @media only screen and (max-height : 625px) {
