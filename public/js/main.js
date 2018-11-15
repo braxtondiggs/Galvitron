@@ -64,6 +64,21 @@
     }
   }).popover('show');
 
+  $(document).on('click', 'button.info-popover:not(.active)', function() {
+    $(this).addClass('active');
+    $(this).popover({
+      html: true,
+      placement: 'bottom',
+      offset: '2, -38',
+      container: '.input-wrapper',
+      content: function() {
+        return $($(this).attr("data-popover-content")).html();
+      }
+    }).popover('show').on('hidden.bs.popover', function() {
+      $('button.info-popover').removeClass('active');
+    });
+  }).on('click', '.skill-info-wrapper .close', () => $('.info-popover').popover('hide'));
+
   $('.profile-actions').on('change', '#profile-image-upload', function(event) { // Profile Image Upload / Profile Edit
     const file = event.target.files[0];
     if (file) {

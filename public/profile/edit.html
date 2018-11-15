@@ -98,7 +98,21 @@
 								<div class="row form-group">
 									<label class="col-sm-3 col-form-label">Skills&nbsp;<span>*</span></label>
 									<div class="col-sm-9">
-										<input type="text" class="typeahead form-control skill-input" placeholder="For ex, “data management” or “web development”" data-provide="typeahead" autocomplete="off"/>
+										<div class="input-wrapper">
+											<input type="text" class="typeahead form-control skill-input" placeholder="For ex, “data management” or “web development”" data-provide="typeahead" autocomplete="off"/>
+											<button type="button" class="info-popover" data-popover-content="#skillsPopover">i</button>
+											<div id="skillsPopover" class="hidden">
+												<div class="skill-info-wrapper">
+													<div class="close">&times;</div>
+													<h3>Suggest Skills</h3>
+													<p>Can’t find your specialty? Not to worry! You can suggest new skills to be added to our database by entering them in the field below. They will be added to your profile upon administrator approval.</p>
+													<div class="skillsForm d-flex">
+														<input type="text" placeholder="Separate skills by commas" />
+														<button type="button">&rarr;</button>
+													</div>
+												</div>
+											</div>
+										</div>
 										<input type="hidden" id="skills-input" class="form-control" data-validator-label="Skills" data-validator="required|skills:5"/>
 										<div class="form-control-feedback"></div>
 										<ul class="chips"></ul>
