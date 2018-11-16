@@ -811,6 +811,12 @@ ul {
   margin: 0 0 20px;
 }
 
+.profile-view .network .network-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .profile-view .company {
   margin: 0;
 }
@@ -1936,6 +1942,8 @@ ul {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  font-family: 'Times';
+  font-weight: normal;
 }
 
 #bookModal .dropdown .btn {
@@ -2333,6 +2341,128 @@ ul {
   .profile-view .network ul p {
     font-size: 12px;
     line-height: normal;
+  }
+
+  #bookModal {
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  #bookModal .modal-dialog {
+    max-height: initial !important;
+    max-width: initial !important;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #bookModal .modal-content {
+    min-width: 100%;
+    min-height: 100vh;
+    box-shadow: initial;
+    border-radius: initial;
+  }
+
+  #bookModal .modal-title {
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 4px;
+  }
+
+  #bookModal .modal-subtitle img {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
+  }
+
+  #bookModal .modal-subtitle h6 {
+    line-height: 28px;
+  }
+
+  #bookModal .modal-subtitle h6:not(:first-child) {
+    display: none;
+  }
+
+  #bookModal .modal-header button {
+    top: 0.5rem;
+  }
+
+  #bookModal .modal-header {
+    border-bottom: solid 1px #d2d2d2;
+    padding: 0.5rem 1rem;
+  }
+
+  #bookModal .modal-body {
+    background-color: #fbfdff;
+    padding: 22px;
+    margin: 0;
+    max-width: initial;
+  }
+
+  #bookModal .modal-body > .flex-row {
+    display: block;
+  }
+
+  #bookModal .modal-body .flex-row > div:first-child {
+    margin: 0 0 16px;
+  }
+
+  #bookModal .dropdown-select .btn {
+    border-color: #979797;
+  }
+
+  #bookModal .dropdown-select .dropdown-menu {
+    width: 100%;
+  }
+
+  #bookModal .modal-footer {
+    padding: 0 22px;
+  }
+
+  #bookModal .date-container {
+    display: block;
+  }
+
+  #bookModal .date-container .calendar {
+    max-width: initial;
+    padding: 18px 28px;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0 !important;
+  }
+
+  #bookModal .Zebra_DatePicker {
+    max-width: 221px;
+    border-right: initial;
+    padding: 0;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  #bookModal .Zebra_DatePicker table {
+    width: 100%;
+    text-align: center;
+  }
+
+  #bookModal .time-container {
+    max-width: 221px;
+    margin: 0 auto;
+  }
+
+  #bookModal .date-container .time {
+    padding: 18px 28px;
+  }
+
+  .dropdown-date .time .title {
+    text-align: left;
+  }
+
+  .dropdown-date .time-container li {
+    font-size: 14px;
+    height: 26px;
+    width: 67px;
+  }
+
+  #bookModal .modal-footer .btn {
+    font-size: 16px;
   }
 }
 @media only screen and (max-height : 625px) {
