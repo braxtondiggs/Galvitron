@@ -2464,6 +2464,111 @@ ul {
   #bookModal .modal-footer .btn {
     font-size: 16px;
   }
+
+  .header-container {
+    border-bottom: solid 1px #d2d2d2;
+    box-shadow: initial;
+  }
+
+  .header-container .container .row {
+    height: 32px;
+  }
+
+  .header-container .logo {
+    font-size: 18px;
+  }
+
+  .header-container .right-header .members-icon {
+    height: 17px;
+    margin: 4px 8px 4px 0;
+    width: 21px;
+  }
+
+  .right-header .action-menu {
+    align-items: center;
+  }
+
+  .right-header .action-menu > a {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block !important;
+    height: 15px;
+    margin-left: 12px;
+    overflow: hidden;
+  }
+
+  .action-menu.show .mobile-menu {
+    height: 20px;
+  }
+  .action-menu.show .mobile-menu::after {
+    background: #fff;
+    border-left: solid 1px #d2d2d2;
+    bottom: -4px;
+    content: '';
+    left: 0;
+    position:absolute;
+    right: -16px;
+    top: -3px;
+    z-index: -1;
+  }
+  .action-menu.show .mobile-menu span {
+    margin-bottom: 0;
+  }
+
+  .mobile-menu span {
+    background-color: #646464;
+    display: block;
+    height: 2px;
+    margin-bottom: 4px;
+    transition: .2s;
+    width: 22px;
+  }
+
+  .mobile-menu span:last-child {
+    margin-bottom: 0;
+  }
+
+  .action-menu.show .mobile-menu span:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+
+  .action-menu.show .mobile-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .action-menu.show .mobile-menu span:nth-child(3) {
+    transform: rotate(45deg) translate(3px, 4px);
+  }
+
+  .mobile-menu ~ .dropdown-menu.show {
+    border: 0;
+    box-shadow: 0 2px 5px -1px #cdcdcd;
+    min-width: initial;
+    position: fixed !important;
+    right: 0;
+    top: 34px !important;
+    transform: none !important;
+    width: 100vw
+  }
+
+  .header-container .right-header .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    max-width: 260px;
+  }
+
+  .header-container .search {
+    position: absolute;
+    right: -75px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .header-container .search form {
+    margin-left: -104vw;
+    width: 75vw;
+  }
 }
 @media only screen and (max-height : 625px) {
   .profile-view .profile-actions > div {
