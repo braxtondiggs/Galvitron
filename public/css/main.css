@@ -2569,6 +2569,63 @@ ul {
     margin-left: -104vw;
     width: 75vw;
   }
+
+  .profile-form > h2 {
+    display: none;
+  }
+  .profile .profile-actions {
+    position: initial;
+    padding: 0 22px;
+  }
+  .profile-edit  {
+    margin-top: 130px;
+    padding: 0 22px;
+  }
+  .user-image {
+    height: 129px;
+    width: 129px;
+    margin: 0 auto !important;
+    position: absolute !important;
+    top: 56px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .profile .profile-actions .user-image .network {
+    height: 37px;
+    width: 37px;
+  }
+  .profile .profile-actions .user-image .helper-text span {
+    font-size: 10px;
+  }
+
+  .profile-edit > div {
+    margin-bottom: 6px;
+  }
+
+  .profile-form .profile-actions .btn {
+    font-size: 16px;
+  }
+
+  .input-wrapper .popover {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    margin: 0;
+  }
+  .input-wrapper::after {
+    content: '';
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(245, 250, 252, 0.75);
+  }
+  .info-popover.active {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-height : 625px) {
   .profile-view .profile-actions > div {
