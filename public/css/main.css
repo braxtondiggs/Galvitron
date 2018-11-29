@@ -685,7 +685,8 @@ ul {
   line-height: 19px;
 }
 
-.skill-info-wrapper .skillsForm input {
+.skill-info-wrapper .skillsForm input,
+.skill-info-wrapper .titleForm input {
   border: solid 1px #979797;
   border-bottom-left-radius: 4px;
   border-right: 0;
@@ -698,7 +699,8 @@ ul {
   padding: 0 10px;
 }
 
-.skill-info-wrapper .skillsForm button {
+.skill-info-wrapper .skillsForm button,
+.skill-info-wrapper .titleForm button {
   background-color: #57afca;
   border: solid 1px #979797;
   border-bottom-right-radius: 4px;

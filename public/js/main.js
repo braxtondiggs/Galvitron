@@ -70,14 +70,16 @@
       html: true,
       placement: 'bottom',
       offset: '2, -38',
-      container: '.input-wrapper',
+      container: $(this).parent('.input-wrapper'),
       content: function() {
         return $($(this).attr("data-popover-content")).html();
       }
     }).popover('show').on('hidden.bs.popover', function() {
-      $('button.info-popover').removeClass('active');
+      $(this).removeClass('active');
     });
-  }).on('click', '.skill-info-wrapper .close', () => $('.info-popover').popover('hide'));
+  }).on('click', '.skill-info-wrapper .close', function() {
+    $(this).parents('.input-wrapper').children('.info-popover').popover('hide')
+  });
 
   $('.profile-actions').on('change', '#profile-image-upload', function(event) { // Profile Image Upload / Profile Edit
     const file = event.target.files[0];

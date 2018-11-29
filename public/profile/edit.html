@@ -77,8 +77,22 @@
 								<div class="row form-group">
 									<label class="col-sm-3 col-form-label">Job Title&nbsp;<span>*</span></label>
 									<div class="col-sm-9">
-										<input type="text" class="typeahead form-control title-input" placeholder="Enter your professional job title." data-provide="typeahead" autocomplete="off" data-validator-label="Title" data-validator="required"/>
-										<div class="form-control-feedback"></div>
+										<div class="input-wrapper">
+											<input type="text" class="typeahead form-control title-input" placeholder="Enter your professional job title." data-provide="typeahead" autocomplete="off" data-validator-label="Title" data-validator="required"/>
+											<button type="button" class="info-popover" data-popover-content="#titlePopover">i</button>
+											<div id="titlePopover" class="hidden">
+												<div class="skill-info-wrapper">
+													<div class="close">&times;</div>
+													<h3>Suggest Title</h3>
+													<p>Can’t find your specialty? Not to worry! You can suggest new skills to be added to our database by entering them in the field below. They will be added to your profile upon administrator approval.</p>
+													<div class="titleForm d-flex">
+														<input type="text" placeholder="Separate titles by commas" />
+														<button type="button">&rarr;</button>
+													</div>
+												</div>
+											</div>
+											<div class="form-control-feedback"></div>
+										</div>
 									</div>
 								</div>
 								<div class="row form-group">
